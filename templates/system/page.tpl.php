@@ -74,12 +74,16 @@
   <header class="l-header" role="banner">
     <div class="l-branding">
       <div class="logo">
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+          <img src="<?php print base_path() . path_to_theme() . '/images/logo.svg' ?>" alt="Nationwide House Energy Rating Scheme" />
+        </a>
       </div>
       <div class="top-link">
         <a href="http://www.industry.gov.au" title="industry.gov.au">industry.gov.au</a>
       </div>
-      <div class="main-menu"></div>
+      <div class="main-menu">
+        <?php $menu_block = module_invoke('superfish', 'block_view', '1'); ?>
+      <?php print render($menu_block['content']); ?></div>
       <div class="search"></div>
       <h1 class="site-name"><?php print $site_name; ?></a></h1>
     </div>
@@ -101,6 +105,13 @@
     <div class="footer-text">
       <p>Administered by the <a href="http://www.industry.gov.au" title="www.industry.gov.au">Department of Industry, Innovation and Science</a> on behalf of the states and territories.</p>
     </div>
-    <div class="footer-menu"></div>
+    <div class="footer-menu">
+      <?php $footer_block = module_invoke('menu', 'block_view', 'menu-footer'); ?>
+      <?php print render($footer_block['content']); ?>
+    </div>
+    <div class="copyright">
+      <?php $copyright_block = module_invoke('copyright_block', 'block_view', 'copyright_block'); ?>
+      <?php print render($copyright_block['content']); ?>
+    </div>
   </footer>
 </div>
