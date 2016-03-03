@@ -1,5 +1,5 @@
 name = NatHERS 2016
-description = Please provide a description for your theme.
+description = Theme for the 2016 refresh of nathers.gov.au.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -19,12 +19,9 @@ scripts[] = js/nathers-2016.behaviors.js
 ; ========================================
 ; Regions
 ; ========================================
-regions[branding] = Branding
-regions[header] = Header
-regions[navigation] = Navigation
-regions[highlighted] = Highlighted
-regions[help] = Help
 regions[content] = Content
-regions[sidebar_first] = First Sidebar
-regions[sidebar_second] = Second Sidebar
-regions[footer] = Footer
+
+; ========================================
+; Plugins
+; ========================================
+plugins[panels][layouts] = panels/layouts
