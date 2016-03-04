@@ -1,6 +1,10 @@
+@import "susy";
+@import "bourbon";
+
 // Import variables, abstractions, base styles and components.
 // Uncomment the next lines and adjust them to your needs.
-//@import "variables/{YOUR FILE NAME HERE}";
+@import "variables/layout";
+@import "variables/colors";
 //@import "abstractions/{YOUR FILE NAME HERE}";
-//@import "base/{YOUR FILE NAME HERE}";
+@import "base/typography";
 //@import "components/{YOUR FILE NAME HERE}";

@@ -1,5 +1,158 @@
-img, media {
-  max-width: 100%;
-}
+/*********************
+BREAKPOINTS
+*********************/
+@font-face {
+  font-family: "montserrat black";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-black-webfont.woff2") format("woff2"), url("/fonts/montserrat-black-webfont.woff") format("woff"), url("/fonts/montserrat-black-webfont.ttf") format("truetype"), url("/fonts/montserrat-black-webfont.svg#montserrat black") format("svg"); }
 
-/* No files to import found in partials/components/**\/* */
+@font-face {
+  font-family: "montserrat bold";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-bold-webfont.woff2") format("woff2"), url("/fonts/montserrat-bold-webfont.woff") format("woff"), url("/fonts/montserrat-bold-webfont.ttf") format("truetype"), url("/fonts/montserrat-bold-webfont.svg#montserrat bold") format("svg"); }
+
+@font-face {
+  font-family: "montserrat extrabold";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("/fonts/montserrat-extrabold-webfont.woff") format("woff"), url("/fonts/montserrat-extrabold-webfont.ttf") format("truetype"), url("/fonts/montserrat-extrabold-webfont.svg#montserrat extrabold") format("svg"); }
+
+@font-face {
+  font-family: "montserrat harline";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-harline-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-harline-webfont.woff2") format("woff2"), url("/fonts/montserrat-harline-webfont.woff") format("woff"), url("/fonts/montserrat-harline-webfont.ttf") format("truetype"), url("/fonts/montserrat-harline-webfont.svg#montserrat harline") format("svg"); }
+
+@font-face {
+  font-family: "montserrat light";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-light-webfont.woff2") format("woff2"), url("/fonts/montserrat-light-webfont.woff") format("woff"), url("/fonts/montserrat-light-webfont.ttf") format("truetype"), url("/fonts/montserrat-light-webfont.svg#montserrat light") format("svg"); }
+
+@font-face {
+  font-family: "montserrat regular";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-regular-webfont.woff2") format("woff2"), url("/fonts/montserrat-regular-webfont.woff") format("woff"), url("/fonts/montserrat-regular-webfont.ttf") format("truetype"), url("/fonts/montserrat-regular-webfont.svg#montserrat regular") format("svg"); }
+
+@font-face {
+  font-family: "montserrat semibold";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("/fonts/montserrat-semibold-webfont.woff") format("woff"), url("/fonts/montserrat-semibold-webfont.ttf") format("truetype"), url("/fonts/montserrat-semibold-webfont.svg#montserrat semibold") format("svg"); }
+
+@font-face {
+  font-family: "montserrat ultralight";
+  font-style: normal;
+  font-weight: eot svg ttf woff woff2;
+  src: url("/fonts/montserrat-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("/fonts/montserrat-ultralight-webfont.woff") format("woff"), url("/fonts/montserrat-ultralight-webfont.ttf") format("truetype"), url("/fonts/montserrat-ultralight-webfont.svg#montserrat ultralight") format("svg"); }
+
+a:link {
+  font: 1em/1.8em 'montserrat regular', Arial, Helvetica, sans-serif;
+  color: #4080b0;
+  text-decoration: none;
+  border-bottom: 1px dotted #CCC;
+  padding-bottom: 1px; }
+
+a:hover {
+  color: #005696;
+  border-bottom: 1px solid #4080b0; }
+
+a:active {
+  color: #c84d54;
+  border-bottom: 1px solid #da888d; }
+
+a:visited {
+  color: #4080b0;
+  border-bottom: 1px dotted #CCC; }
+
+h1 {
+  font: normal 3em/1 'montserrat ultralight', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: .5em; }
+
+h2 {
+  font: normal 2em/1.2 'montserrat light', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: 0.45em;
+  padding-top: 1em;
+  border-top: 1px dotted #CCC;
+  margin-top: 0.7em; }
+
+h3 {
+  font: normal 1.4em/1.2 'montserrat regular', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: 0.3em;
+  padding-top: 0.5em; }
+
+h4 {
+  font: normal 1.1em/1.3 'montserrat semibold', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: 0.3em;
+  padding-top: 0.5em; }
+
+h5 {
+  font: normal .85em/1.45 'montserrat semibold', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+h6 {
+  font: normal .85em/1.4 'montserrat regular', Arial, Helvetica, sans-serif;
+  color: #00703c;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-family: 'montserrat semibold'; }
+
+blockquote {
+  padding-right: 1.4em;
+  padding-left: 1.4em; }
+
+p, ul, ol {
+  font: 1em/1.6em 'montserrat light', Arial, Helvetica, sans-serif;
+  color: #333;
+  padding-bottom: .9em; }
+
+ul {
+  padding-left: 1.2em;
+  color: #099; }
+
+ol {
+  padding-left: 1.4em; }
+
+ul li {
+  color: #c84d54;
+  list-style: square;
+  padding-left: 0.2em; }
+
+ol li {
+  list-style: decimal; }
+
+.li-override {
+  /* Overrides ol li text colour via a <span> */
+  color: #333; }
+
+p + ul,
+p + ol {
+  margin-top: -0.9em; }
+
+hr {
+  height: 0;
+  padding-top: 0.6em;
+  margin-bottom: 0.3em;
+  clear: both;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 1px dotted #cccccc; }

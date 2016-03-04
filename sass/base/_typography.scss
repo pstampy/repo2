@@ -1,0 +1,126 @@
+// Typography
+
+$file-formats: eot svg ttf woff woff2;
+
+$fonts: black bold extrabold harline light regular semibold ultralight;
+
+@each $font in $fonts {
+	@include font-face("montserrat #{$font}", "fonts/montserrat-#{$font}-webfont", $file-formats);
+}
+
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+	font: normal 3em/1 'montserrat ultralight', Arial, Helvetica, sans-serif;
+	@extend .green;
+}
+h1	{
+	color: #00703c;
+	padding-bottom: .5em;
+}
+h2	{
+	font: normal 2em/1.2 'montserrat light', Arial, Helvetica, sans-serif;
+	color: #00703c;
+	padding-bottom: 0.45em;
+	padding-top: 1em;
+	border-top: 1px dotted #CCC;
+	margin-top: 0.7em;
+}
+h3	{
+	font: normal 1.4em/1.2 'montserrat regular', Arial, Helvetica, sans-serif;
+	color: #00703c;
+	padding-bottom: 0.3em;
+	padding-top: 0.5em;
+}
+h4	{
+	font: normal 1.1em/1.3 'montserrat semibold', Arial, Helvetica, sans-serif;
+	color: #00703c;
+	padding-bottom: 0.3em;
+	padding-top: 0.5em;
+}
+h5	{
+	font: normal .85em/1.45 'montserrat semibold', Arial, Helvetica, sans-serif;
+	color: #00703c;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+h6	{
+	font: normal .85em/1.4 'montserrat regular', Arial, Helvetica, sans-serif;
+	color: #00703c;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+em {
+	font-style: italic;
+}
+strong {
+	font-family: 'montserrat semibold';
+}
+blockquote {
+	padding-right: 1.4em;
+	padding-left: 1.4em;
+}
+
+p, ul, ol {
+	font: 1em/1.6em 'montserrat light', Arial, Helvetica, sans-serif;
+	color: #333;
+	padding-bottom: .9em;
+}
+ul{
+	padding-left: 1.2em;
+	color: #099;
+}
+ol{
+	padding-left: 1.4em;
+}
+ul li {
+	color: #c84d54;
+	list-style: square;
+	padding-left: 0.2em;
+}
+ol li {
+	list-style: decimal;	
+}
+.li-override { /* Overrides ol li text colour via a <span> */
+	color: #333;
+}
+p+ul, 
+p+ol {
+	margin-top: -0.9em;
+}
+
+hr {
+	height: 0;
+	padding-top: 0.6em;
+	margin-bottom: 0.3em;
+	clear: both;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: 1px dotted rgba(204,204,204,1.00);
+}
+
+a:link {
+	font: 1em/1.8em 'montserrat regular', Arial, Helvetica, sans-serif;
+	color: #4080b0;
+	text-decoration: none;
+	border-bottom: 1px dotted #CCC;
+	padding-bottom: 1px;
+}
+a:hover {
+	color: #005696;
+	border-bottom: 1px solid #4080b0;
+}
+a:active {
+	color: #c84d54;
+	border-bottom: 1px solid #da888d;
+}
+a:visited {
+	color: #4080b0;
+	border-bottom: 1px dotted #CCC;
+}

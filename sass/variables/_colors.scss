@@ -1,0 +1,18 @@
+// Colors
+
+$colors: (
+	(green, #00703c),
+	(red, #b5121b),
+	(blue, #005696),
+  (grey, #000000)
+);
+
+$mix-values: 75 50 25 13 7;
+
+@each $color, $value in $colors {
+	@each $mix-value in $mix-values {
+		.#{$color}-#{$mix-value} {
+			color: lighten(#{$value}, #{$mix-value}%);
+		}
+	}
+}
