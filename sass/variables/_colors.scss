@@ -1,18 +1,47 @@
 // Colors
 
 $colors: (
-	(green, #00703c),
-	(red, #b5121b),
-	(blue, #005696),
-  (grey, #000000)
+	red: (
+		full: #b5121b, 
+		three-quarter: #c84d54,
+		half: #da888d,
+		quarter: #ecc4c6,
+		eighth: #f5e0e1,
+		sixteenth: #faeeef
+	),
+	 green: (
+		full: #00703c,
+		three-quarter: #40946d,
+		half: #7fb79d,
+		quarter: #bfdbce,
+		eighth: #deece6,
+		sixteenth: #edf5f1
+	),
+	blue: (
+		full: #005696,
+		three-quarter: #4080b0,
+		half: #7faaca,
+		quarter: #bfd5e5,
+		eighth: #dee9f1,
+		sixteenth: #edf3f8
+	),
+	grey: (
+		full: #000000,
+		three-quarter: #404040,
+		half: #7f7f7f,
+		quarter: #bfbfbf,
+		eighth: #dedede,
+		sixteenth: #ededed
+	)
 );
 
-$mix-values: 75 50 25 13 7;
-
-@each $color, $value in $colors {
-	@each $mix-value in $mix-values {
-		.#{$color}-#{$mix-value} {
-			color: lighten(#{$value}, #{$mix-value}%);
-		}
-	}
+// retrieve color from map ie. `color(primary, base)`
+@function color($color-name, $color-variant:null) {
+  // color variant is optional
+  @if ($color-variant != null) {
+    // map inception
+    @return map-get(map-get($colors, $color-name), $color-variant);
+  } @else {
+    @return map-get(map-get($colors, $color-name), 'full');
+  }
 }

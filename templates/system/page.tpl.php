@@ -72,19 +72,24 @@
 ?>
 <div class="l-page">
   <header class="l-header" role="banner">
-    <div class="l-branding">
+    <div class="l-branding"><div class="top-link">
+        <a href="http://www.industry.gov.au" title="industry.gov.au">industry.gov.au</a>
+      </div>
       <div class="logo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
           <img src="<?php print base_path() . path_to_theme() . '/images/logo.svg' ?>" alt="Nationwide House Energy Rating Scheme" />
         </a>
       </div>
-      <div class="top-link">
-        <a href="http://www.industry.gov.au" title="industry.gov.au">industry.gov.au</a>
-      </div>
+      <div class="l-utilities">
       <div class="main-menu">
         <?php $menu_block = module_invoke('superfish', 'block_view', '1'); ?>
-      <?php print render($menu_block['content']); ?></div>
-      <div class="search"></div>
+        <?php print render($menu_block['content']); ?>
+      </div>
+      <div class="search">
+        <?php $search_block = module_invoke('search', 'block_view', 'form'); ?>
+        <?php print render($search_block['content']); ?>        
+      </div>
+      </div>
       <h1 class="site-name"><?php print $site_name; ?></a></h1>
     </div>
   </header>

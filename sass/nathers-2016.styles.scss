@@ -1,10 +1,16 @@
 @import "susy";
 @import "bourbon";
+@import "../libraries/sass-vertical-rhythm/sass/sass-vertical-rhythm";
 
 // Import variables, abstractions, base styles and components.
 // Uncomment the next lines and adjust them to your needs.
 @import "variables/layout";
 @import "variables/colors";
-//@import "abstractions/{YOUR FILE NAME HERE}";
+
+@import "abstractions/mixins";
+
 @import "base/typography";
-//@import "components/{YOUR FILE NAME HERE}";
+
+@import "components/header";
+@import "components/menu";
+@import "components/search";

@@ -1,0 +1,32 @@
+{
+  "name": "sass-vertical-rhythm",
+  "homepage": "https://github.com/Undistraction/sass-vertical-rhythm",
+  "authors": [
+    "Pedr Browne <pedr.browne@gmail.com>"
+  ],
+  "description": "Compass's vertical-rhythm module extracted",
+  "main": "sass/_sass-vertical-rhythm.scss",
+  "keywords": [
+    "sass",
+    "vertical-rhythm",
+    "typography"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0e8dac5de6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0e8dac5de6dd09eacb425f992d36572d5589a988"
+  },
+  "_source": "git://github.com/Undistraction/sass-vertical-rhythm.git",
+  "_target": "*",
+  "_originalSource": "sass-vertical-rhythm",
+  "_direct": true
+}

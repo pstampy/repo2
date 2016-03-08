@@ -1,126 +1,123 @@
 // Typography
 
 $file-formats: eot svg ttf woff woff2;
+$font-weights: black bold extrabold harline light regular semibold ultralight;
+$font-stack: 'montserrat regular', arial, helvetica, sans-serif;
+$rhythm-unit: 'rem';
 
-$fonts: black bold extrabold harline light regular semibold ultralight;
-
-@each $font in $fonts {
-	@include font-face("montserrat #{$font}", "fonts/montserrat-#{$font}-webfont", $file-formats);
-}
-
-
-// Headings
-
-h1, h2, h3, h4, h5, h6 {
-	font: normal 3em/1 'montserrat ultralight', Arial, Helvetica, sans-serif;
-	@extend .green;
-}
-h1	{
-	color: #00703c;
-	padding-bottom: .5em;
-}
-h2	{
-	font: normal 2em/1.2 'montserrat light', Arial, Helvetica, sans-serif;
-	color: #00703c;
-	padding-bottom: 0.45em;
-	padding-top: 1em;
-	border-top: 1px dotted #CCC;
-	margin-top: 0.7em;
-}
-h3	{
-	font: normal 1.4em/1.2 'montserrat regular', Arial, Helvetica, sans-serif;
-	color: #00703c;
-	padding-bottom: 0.3em;
-	padding-top: 0.5em;
-}
-h4	{
-	font: normal 1.1em/1.3 'montserrat semibold', Arial, Helvetica, sans-serif;
-	color: #00703c;
-	padding-bottom: 0.3em;
-	padding-top: 0.5em;
-}
-h5	{
-	font: normal .85em/1.45 'montserrat semibold', Arial, Helvetica, sans-serif;
-	color: #00703c;
-	padding-bottom: 0.5em;
-	padding-top: 0.5em;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-h6	{
-	font: normal .85em/1.4 'montserrat regular', Arial, Helvetica, sans-serif;
-	color: #00703c;
-	padding-bottom: 0.5em;
-	padding-top: 0.5em;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-em {
-	font-style: italic;
-}
-strong {
-	font-family: 'montserrat semibold';
-}
-blockquote {
-	padding-right: 1.4em;
-	padding-left: 1.4em;
+@include establish-baseline($base-font-size);
+@each $font-weight in $font-weights {
+	@include font-face("montserrat #{$font-weight}", "../fonts/montserrat-#{$font-weight}-webfont", $file-formats);
 }
 
-p, ul, ol {
-	font: 1em/1.6em 'montserrat light', Arial, Helvetica, sans-serif;
-	color: #333;
-	padding-bottom: .9em;
+@mixin weight($weight) {
+	font-family: 'montserrat #{$weight}', arial, helvetica, sans-serif;
 }
-ul{
-	padding-left: 1.2em;
-	color: #099;
+body {
+	@include margin(0);
 }
-ol{
-	padding-left: 1.4em;
-}
-ul li {
-	color: #c84d54;
-	list-style: square;
-	padding-left: 0.2em;
-}
-ol li {
-	list-style: decimal;	
-}
-.li-override { /* Overrides ol li text colour via a <span> */
-	color: #333;
-}
-p+ul, 
-p+ol {
-	margin-top: -0.9em;
-}
+.l-page {
+	@include rhythm(0,0,0,0);
+	@include adjust-font-size-to($base-font-size);
+	font-family: $font-stack;
+	color: color(grey, three-quarter);
+	@include margin(null 0.5rem);
 
-hr {
-	height: 0;
-	padding-top: 0.6em;
-	margin-bottom: 0.3em;
-	clear: both;
-	border-right: none;
-	border-left: none;
-	border-top: none;
-	border-bottom: 1px dotted rgba(204,204,204,1.00);
-}
 
-a:link {
-	font: 1em/1.8em 'montserrat regular', Arial, Helvetica, sans-serif;
-	color: #4080b0;
-	text-decoration: none;
-	border-bottom: 1px dotted #CCC;
-	padding-bottom: 1px;
-}
-a:hover {
-	color: #005696;
-	border-bottom: 1px solid #4080b0;
-}
-a:active {
-	color: #c84d54;
-	border-bottom: 1px solid #da888d;
-}
-a:visited {
-	color: #4080b0;
-	border-bottom: 1px dotted #CCC;
+	// Headings
+
+	h1, h2, h3, h4, h5, h6 {
+		color: color(green);
+	}
+	h1	{
+		@include adjust-font-size-to($base-font-size * 2.5);
+		@include rhythm(0,0,0,0.5);
+		@include weight(ultralight);
+	}
+	h2	{
+		@include adjust-font-size-to($base-font-size * 2);
+		@include rhythm(1,0.7,0,0.45);
+		@include leading-border(1px, 1, $base-font-size, dotted);
+		@include weight(light);
+	}
+	h3	{
+		@include adjust-font-size-to($base-font-size * 1.4);
+		@include rhythm(0.5,0,0,0.3);
+		@include weight(regular);
+	}
+	h4	{
+		@include adjust-font-size-to($base-font-size * 1.1);
+		@include rhythm(0.5,0,0,0.3);
+		@include weight(semibold);
+	}
+	h5	{
+		@include adjust-font-size-to($base-font-size * 0.85);
+		@include rhythm(0.5,0,0,0.5);
+		@include weight(semibold);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	h6	{
+		@include adjust-font-size-to($base-font-size * 0.85);
+		@include rhythm(0.5,0,0,0.5);
+		@include weight(regular);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+	em {
+		font-style: italic;
+	}
+	strong {
+		@include weight(semibold);
+	}
+	blockquote {
+		padding-right: 1.4em;
+		padding-left: 1.4em;
+	}
+
+	p, ul, ol {
+		@include adjust-leading-to(1.2);
+		@include weight(light);
+		@include rhythm(0,0,0,0.9);
+		color: color(grey, three-quarter);
+	}
+	ul {
+		padding-left: 1.2em;
+	}
+	ol {
+		padding-left: 1.4em;
+	}
+	ul li {
+		color: #c84d54;
+		list-style: square;
+		padding-left: 0.2em;
+	}
+	ol li {
+		list-style: decimal;	
+	}
+
+	p+ul, 
+	p+ol {
+		margin-top: -0.9em;
+	}
+
+	a {
+		@include transition(all 0.1s ease-in);
+		&:link,
+		&:visited {
+			@include trailing-border (1px, 1, $base-font-size, dotted);
+			color: color(blue, three-quarter);
+			padding-bottom: 1px;
+			text-decoration: none;
+		}
+		&:hover {
+			color: color(blue);
+			border-bottom-color: color(blue, three-quarter);
+			border-bottom-style: solid;
+		}
+		&:active {
+			color: color(red, three-quarter);
+			border-bottom: 1px solid color(red, half);
+		}
+	}
 }

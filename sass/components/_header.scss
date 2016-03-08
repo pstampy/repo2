@@ -1,0 +1,34 @@
+// Header
+
+.l-header {
+	@include padding($vert-spacing-unit / 2 null null null);
+	@include margin(null null $vert-spacing-unit null);
+}
+
+.l-branding {
+	.top-link {
+		text-align: right;
+		@include margin(null auto $vert-spacing-unit auto);
+	}
+	.logo {
+		width: rem(300px);
+		@include margin(null auto $vert-spacing-unit auto);
+		a {
+			border-bottom: none;
+		}
+	}
+	.l-utilities {
+		@include margin(null null 1.5rem null);
+		@include padding(1rem);
+		@include clearfix;
+		background: color(grey, three-quarter);
+		border-radius: 0.2rem;
+		.main-menu {
+			@include span(first $mob-cols / $mob-cols * 1 of $mob-cols);
+		}
+		.search {
+			@include span(last $mob-cols / $mob-cols * 5 of $mob-cols);
+			text-align: right;
+		}
+	}
+}

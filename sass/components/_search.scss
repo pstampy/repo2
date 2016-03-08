@@ -1,0 +1,46 @@
+// Search
+
+.search {
+	.form-submit {
+		@include transition(all 0.1s ease-in);
+		color: color(grey, sixteenth);
+		background-color: color(blue, three-quarter);
+		text-align: center;
+		cursor: pointer;
+		border-radius: rem(2px);
+		text-decoration: none;
+		@include padding (0.5rem);
+		border:none;
+		@include adjust-font-size-to(1rem);
+		&:hover {
+			color: color(grey);
+			background-color: color(blue, half);
+		}
+		&:active {
+			color: color(grey, sixteenth);
+			background-color: color(red, half);
+		}
+	}
+	.form-search {
+		@include adjust-font-size-to(1rem);
+		@include margin(-3px null null null);
+		@include weight(light);
+		background: color(grey, sixteenth);
+		border-radius: rem(2px);
+		border: none;
+		color: color(grey, three-quarter);
+		@include padding(0.5rem);
+		vertical-align: middle;
+		width: 80%;
+		@include placeholder {
+			color: color(grey, half);
+			@include weight(light);
+		}
+	}
+	label {
+		display:none;
+	}
+	h2 {
+		display: none;
+	}
+}

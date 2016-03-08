@@ -1,0 +1,11 @@
+// Menu
+
+.main-menu {
+	.menu-line {
+		@include margin(rem(7px) 0);
+		background: color(grey, sixteenth);
+		border-radius: 2px;
+		height: rem(3px);
+		width: 2.5rem;
+	}
+}
