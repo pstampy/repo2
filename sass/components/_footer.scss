@@ -1,0 +1,38 @@
+// Footer
+
+.l-footer {
+	a {
+		@extend %base-link;
+	}
+	background: color(grey, eighth);
+	padding: 0.5rem;
+	text-align: center;
+	.copyright {
+		p {
+			@include rhythm(0);
+		}
+	}
+	.footer-text {
+		text-align: center;
+	}
+	.footer-menu {
+		@include margin(null null $vert-spacing-unit / 2 null);
+		.menu {
+			@include align-items(stretch);
+  		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include flex-wrap(wrap);
+		}
+		ul, li {
+			list-style: none;
+			@include padding(0);
+			@include margin(0)
+		}
+		li {
+			@include flex(1);
+			text-align: center;
+			@include margin(0.2rem 0.5rem)
+		}
+	}
+}

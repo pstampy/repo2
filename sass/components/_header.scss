@@ -2,33 +2,70 @@
 
 .l-header {
 	@include padding($vert-spacing-unit / 2 null null null);
-	@include margin(null null $vert-spacing-unit null);
+	@include margin(null 0.5rem $vert-spacing-unit 0.5rem);
+	.top-link {
+		text-align: right;
+		@include margin(null auto $vert-spacing-unit / 2 auto);
+		a {
+			color: color(blue, three-quarter);
+			text-decoration: none;
+			@extend %base-link; 
+		}
+	}
 }
 
 .l-branding {
-	.top-link {
-		text-align: right;
-		@include margin(null auto $vert-spacing-unit auto);
-	}
 	.logo {
 		width: rem(300px);
 		@include margin(null auto $vert-spacing-unit auto);
 		a {
 			border-bottom: none;
+			display: block;
+			line-height: 0;
 		}
 	}
 	.l-utilities {
+		@include border-top-radius(0.2rem);
+		@include clearfix;
 		@include margin(null null 1.5rem null);
 		@include padding(1rem);
-		@include clearfix;
+		@include display(flex);
+		@include flex-wrap(nowrap);
 		background: color(grey, three-quarter);
-		border-radius: 0.2rem;
-		.main-menu {
-			@include span(first $mob-cols / $mob-cols * 1 of $mob-cols);
+		border-bottom: 9px solid color(red);
+	}
+}
+
+// Responsiveness
+
+@include breakpoint(tablet) {
+	.l-branding {
+		.l-utilities {
+			border-bottom-width: 6px;
+			@include display(block);
+			@include padding(0 0.5rem);
 		}
-		.search {
-			@include span(last $mob-cols / $mob-cols * 5 of $mob-cols);
-			text-align: right;
+	}
+}
+
+@include breakpoint(desktop) {
+	.l-branding {
+		@include display(flex);
+		@include align-items(flex-end);
+		.logo {
+			@include flex(0);
+			@include margin(0 rem(11px) 0 0);
+			min-width: rem(150px);
+		}
+		.l-utilities {
+			@include border-top-radius(0);
+			@include display(flex);
+			@include align-items(center);
+			@include flex(1);
+			@include margin(0);
+			@include padding(0 rem(15px));
+			border-bottom-width: 5px;
+			height: rem(78px);
 		}
 	}
 }

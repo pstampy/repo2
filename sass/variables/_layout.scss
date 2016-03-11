@@ -11,8 +11,8 @@ $susy: (
 );
 
 //Breakpoints. Names are what the size 'breaks into' from below, for example, mobile->tablet = $bp-tablet
-$bp-tablet: 48em;
-$bp-desk: 710px;
+$bp-tablet: 768px;
+$bp-desk: 1200px;
 
 //Column counts. The larger the screen size, the more columns we can have.
 $mob-cols: 6;

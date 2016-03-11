@@ -15,13 +15,15 @@ $rhythm-unit: 'rem';
 }
 body {
 	@include margin(0);
+	* {
+		@include box-sizing(border-box);
+	}
 }
 .l-page {
 	@include rhythm(0,0,0,0);
 	@include adjust-font-size-to($base-font-size);
 	font-family: $font-stack;
 	color: color(grey, three-quarter);
-	@include margin(null 0.5rem);
 
 
 	// Headings
@@ -100,24 +102,29 @@ body {
 	p+ol {
 		margin-top: -0.9em;
 	}
+	.l-main {
+		a {
+			@extend %base-link;
+		}
+	}
+}
 
-	a {
-		@include transition(all 0.1s ease-in);
-		&:link,
-		&:visited {
-			@include trailing-border (1px, 1, $base-font-size, dotted);
-			color: color(blue, three-quarter);
-			padding-bottom: 1px;
-			text-decoration: none;
-		}
-		&:hover {
-			color: color(blue);
-			border-bottom-color: color(blue, three-quarter);
-			border-bottom-style: solid;
-		}
-		&:active {
-			color: color(red, three-quarter);
-			border-bottom: 1px solid color(red, half);
-		}
+%base-link {
+	@include transition(all 0.1s ease-in);
+	&:link,
+	&:visited {
+		@include trailing-border (1px, 1, $base-font-size, dotted);
+		color: color(blue, three-quarter);
+		padding-bottom: 1px;
+		text-decoration: none;
+	}
+	&:hover {
+		color: color(blue);
+		border-bottom-color: color(blue, three-quarter);
+		border-bottom-style: solid;
+	}
+	&:active {
+		color: color(red, three-quarter);
+		border-bottom: 1px solid color(red, half);
 	}
 }

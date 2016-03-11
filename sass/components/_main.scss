@@ -1,0 +1,5 @@
+// Main content area
+
+.l-main {
+	@include margin(null 0.5rem $vert-spacing-unit 0.5rem);
+}

@@ -1,11 +1,128 @@
 // Menu
 
 .main-menu {
+	//@include span(first $mob-cols / $mob-cols * 1 of $mob-cols);
+	@include flex(0);
+	@include margin(null 1rem null null);
+	width: 2.5rem;
+	.menu {
+		> .menuparent {
+			> a:after {
+				content: '\a0\025BE';
+			}
+			.menuparent {
+				> a:after {
+					content: '\a0\025B8';
+				}
+			}
+		}
+		li {
+			list-style: none;
+			@include padding(0);
+			ul {
+				@include padding(0);
+				box-shadow: 0px 1px 9px 1px color(grey);
+				li a {
+					border-radius: 0;
+					text-align: left;
+				}
+			}
+			a {
+				@include padding(0.2rem 0.5rem);
+				background-color: color(grey, three-quarter);
+				border-bottom: none;
+				color: color(grey, sixteenth);
+				text-decoration: none;
+				@include border-top-radius(rem(2px));
+				@include border-bottom-radius(rem(2px));
+				text-align: center;
+				width: 100%;
+				&:hover {
+					background-color: color(blue, three-quarter);
+				}
+			}
+		}
+	}
 	.menu-line {
 		@include margin(rem(7px) 0);
 		background: color(grey, sixteenth);
 		border-radius: 2px;
 		height: rem(3px);
 		width: 2.5rem;
+	}
+}
+#sidr-0 {
+	ul {
+		@include margin(0);
+		border: none;
+	}
+	li {
+		list-style: none;
+		&.sidr-class-sf-depth-1 {
+			> a {
+				@include padding(0.2rem 0 0.2rem 1rem);
+			}
+		}
+		&.sidr-class-sf-depth-2 {
+			> a {
+				@include padding(0 0 0 2rem);
+			}
+		}
+		&.sidr-class-sf-depth-3 {
+			> a {
+				@include padding(0 0 0 3rem);
+			}
+		}
+	}
+	a {
+		@include margin(0 0 0 0);
+		@include adjust-font-size-to($base-font-size);
+		@include adjust-leading-to(1.5);
+		@include weight(light);
+		color: color(grey, sixteenth);
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+			background: none;
+			box-shadow: none;
+		}
+	}
+	ul li {
+    display: block;
+    line-height: auto;
+    border: none;
+    &:hover {
+    	background: none;
+    	a {
+    		box-shadow: none;
+    	}
+    }
+	}
+}
+
+// Responsiveness 
+@include breakpoint(tablet) {
+	.main-menu {
+		width: 100%;
+		@include margin(0);
+		@include clearfix;
+		#sidr-wrapper-0 {
+			@include display(none !important);
+			visibility: hidden;
+		}
+		#superfish-1 {
+			@include display(flex !important);
+			@include flex-wrap(nowrap);
+			@include align-items(center);
+			@include padding(0.5rem 0);
+			@include justify-content(space-around);
+			@include margin(3px null null null);
+		}
+
+	}
+}
+@include breakpoint(desktop) {
+	.main-menu {
+		@include flex(4);
 	}
 }

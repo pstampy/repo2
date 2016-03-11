@@ -87,7 +87,7 @@
 		},
 	"\/libraries\/sass-vertical-rhythm\/sass\/_sass-vertical-rhythm.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -103,7 +103,7 @@
 		},
 	"\/libraries\/sass-vertical-rhythm\/sass\/sass-vertical-rhythm\/_keywords.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -119,7 +119,7 @@
 		},
 	"\/libraries\/sass-vertical-rhythm\/sass\/sass-vertical-rhythm\/_units.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -177,7 +177,7 @@
 		},
 	"\/sass\/abstractions\/_mixins.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -193,7 +193,7 @@
 		},
 	"\/sass\/base\/_typography.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -207,9 +207,25 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/sass\/components\/_footer.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 2,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_footer.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_footer.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/sass\/components\/_header.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -223,9 +239,25 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/sass\/components\/_main.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 2,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_main.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_main.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/sass\/components\/_menu.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -239,9 +271,25 @@
 		"shouldRunBless": 0,
 		"useLibsass": 1
 		},
+	"\/sass\/components\/_page.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 2,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/components\/_page.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_page.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 1
+		},
 	"\/sass\/components\/_search.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -257,7 +305,7 @@
 		},
 	"\/sass\/nathers-2016.reset.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -273,7 +321,7 @@
 		},
 	"\/sass\/nathers-2016.styles.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -289,7 +337,7 @@
 		},
 	"\/sass\/variables\/_colors.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -305,7 +353,7 @@
 		},
 	"\/sass\/variables\/_layout.scss": {
 		"createSourceMap": 0,
-		"debugStyle": 0,
+		"debugStyle": 2,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 1,
@@ -988,7 +1036,7 @@
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 2,
 	"sassCreateSourceMap": 0,
-	"sassDebugStyle": 0,
+	"sassDebugStyle": 2,
 	"sassDecimalPrecision": 10,
 	"sassOutputStyle": 0,
 	"sassUseLibsass": 1,

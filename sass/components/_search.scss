@@ -1,40 +1,54 @@
 // Search
 
 .search {
-	.form-submit {
-		@include transition(all 0.1s ease-in);
-		color: color(grey, sixteenth);
-		background-color: color(blue, three-quarter);
-		text-align: center;
-		cursor: pointer;
-		border-radius: rem(2px);
-		text-decoration: none;
-		@include padding (0.5rem);
-		border:none;
-		@include adjust-font-size-to(1rem);
-		&:hover {
-			color: color(grey);
-			background-color: color(blue, half);
-		}
-		&:active {
-			color: color(grey, sixteenth);
-			background-color: color(red, half);
+	//@include span(last $mob-cols / $mob-cols * 5 of $mob-cols);
+	@include flex(1);
+	.container-inline {
+		@include display(flex);
+	}
+	.form-type-searchfield {
+		@include flex(1);
+		@include margin(0);
+		.form-search {
+			@include adjust-font-size-to(1rem);
+			@include border-left-radius(rem(2px));
+			@include padding(0.5rem);
+			@include weight(light);
+			@include flex(1);
+			background: color(grey, sixteenth);
+			border: none;
+			color: color(grey, three-quarter);
+			vertical-align: middle;
+			width: 100%;
+			@include placeholder {
+				color: color(grey, half);
+				@include weight(light);
+			}
 		}
 	}
-	.form-search {
-		@include adjust-font-size-to(1rem);
-		@include margin(-3px null null null);
-		@include weight(light);
-		background: color(grey, sixteenth);
-		border-radius: rem(2px);
-		border: none;
-		color: color(grey, three-quarter);
-		@include padding(0.5rem);
-		vertical-align: middle;
-		width: 80%;
-		@include placeholder {
-			color: color(grey, half);
+	
+	.form-actions {
+		@include flex(0);
+		.form-submit {
+			@include adjust-font-size-to(1rem);
+			@include padding (0.5rem);
+			@include transition(all 0.1s ease-in);
+			background-color: color(blue, three-quarter);
+			@include border-right-radius(rem(2px));
 			@include weight(light);
+			border:none;
+			color: color(grey, sixteenth);
+			cursor: pointer;
+			text-align: center;
+			text-decoration: none;
+			&:hover {
+				color: color(grey);
+				background-color: color(blue, half);
+			}
+			&:active {
+				color: color(grey, sixteenth);
+				background-color: color(red, half);
+			}
 		}
 	}
 	label {
@@ -42,5 +56,21 @@
 	}
 	h2 {
 		display: none;
+	}
+}
+
+// Responsiveness
+
+@include breakpoint(tablet) {
+	.search {
+		width: 100%;
+		@include display(block);
+		@include margin(0 0 0.5rem 0);
+	}
+}
+
+@include breakpoint(desktop) {
+	.search {
+		@include margin(0);
 	}
 }
