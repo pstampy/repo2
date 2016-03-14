@@ -232,7 +232,7 @@ body {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 1rem 1rem 1rem 0.5rem;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -333,8 +333,8 @@ body {
   -moz-flex: 0;
   -ms-flex: 0;
   flex: 0;
-  margin-right: 1rem;
-  width: 2.5rem; }
+  margin-right: 0.5rem;
+  width: 3rem; }
   /* line 10, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu > .menuparent > a:after {
     content: '\a0\025BE'; }
@@ -355,47 +355,66 @@ body {
         text-align: left; }
     /* line 30, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu .menu li a {
+      border-bottom-left-radius: 0.125rem;
+      border-bottom-right-radius: 0.125rem;
+      border-top-left-radius: 0.125rem;
+      border-top-right-radius: 0.125rem;
       padding: 0.2rem 0.5rem;
       background-color: #404040;
       border-bottom: none;
       color: #ededed;
-      text-decoration: none;
-      border-top-left-radius: 0.125rem;
-      border-top-right-radius: 0.125rem;
-      border-bottom-left-radius: 0.125rem;
-      border-bottom-right-radius: 0.125rem;
       text-align: center;
+      text-decoration: none;
       width: 100%; }
       /* line 40, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .main-menu .menu li a:hover {
         background-color: #4080b0; }
   /* line 46, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu-line {
-    margin: 0.4375rem 0;
+    margin: 0 0 0.4375rem;
     background: #ededed;
     border-radius: 2px;
     height: 0.1875rem;
-    width: 2.5rem; }
+    width: 2rem; }
+    /* line 52, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    .main-menu .menu-line.last {
+      margin-bottom: 0; }
+  /* line 56, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  .main-menu .menu-button {
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    padding: 0.5rem;
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem; }
+    /* line 61, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    .main-menu .menu-button:hover, .main-menu .menu-button:active {
+      background-color: #7f7f7f; }
+    /* line 65, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    .sidr-open .main-menu .menu-button {
+      background-color: #7f7f7f; }
 
-/* line 55, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+/* line 71, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 ul {
   margin: 0;
   border: none; }
 
-/* line 59, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+/* line 75, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 li {
   list-style: none; }
-  /* line 62, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 78, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-1 > a {
     padding: 0.2rem 0 0.2rem 1rem; }
-  /* line 67, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 83, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-2 > a {
     padding: 0 0 0 2rem; }
-  /* line 72, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 88, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-3 > a {
     padding: 0 0 0 3rem; }
 
-/* line 77, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+/* line 93, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 a {
   margin: 0;
   font-size: 1rem;
@@ -404,26 +423,26 @@ body {
   font-family: "montserrat light", arial, helvetica, sans-serif;
   color: #ededed;
   text-decoration: none; }
-  /* line 84, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 100, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 a:hover {
     text-decoration: underline;
     background: none;
     box-shadow: none; }
 
-/* line 90, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+/* line 106, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 ul li {
   display: block;
   line-height: auto;
   border: none; }
-  /* line 94, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 110, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 ul li:hover {
     background: none; }
-    /* line 96, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    /* line 112, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     #sidr-0 ul li:hover a {
       box-shadow: none; }
 
 @media (min-width: 768px) {
-  /* line 105, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 121, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
     width: 100%;
     margin: 0; }
@@ -432,11 +451,11 @@ body {
       clear: both;
       content: "";
       display: table; }
-    /* line 109, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    /* line 125, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #sidr-wrapper-0 {
       display: none !important;
       visibility: hidden; }
-    /* line 113, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    /* line 129, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #superfish-1 {
       display: flex !important;
       -webkit-box-lines: single;
@@ -468,7 +487,7 @@ body {
       margin-top: 3px; } }
 
 @media (min-width: 1200px) {
-  /* line 125, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 141, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
     -webkit-box-flex: 4;
     -moz-box-flex: 4;

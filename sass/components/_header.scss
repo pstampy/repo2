@@ -28,7 +28,7 @@
 		@include border-top-radius(0.2rem);
 		@include clearfix;
 		@include margin(null null 1.5rem null);
-		@include padding(1rem);
+		@include padding(1rem 1rem 1rem 0.5rem);
 		@include display(flex);
 		@include flex-wrap(nowrap);
 		background: color(grey, three-quarter);

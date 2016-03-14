@@ -3,8 +3,8 @@
 .main-menu {
 	//@include span(first $mob-cols / $mob-cols * 1 of $mob-cols);
 	@include flex(0);
-	@include margin(null 1rem null null);
-	width: 2.5rem;
+	@include margin(null 0.5rem null null);
+	width: 3rem;
 	.menu {
 		> .menuparent {
 			> a:after {
@@ -28,14 +28,14 @@
 				}
 			}
 			a {
+				@include border-bottom-radius(rem(2px));
+				@include border-top-radius(rem(2px));
 				@include padding(0.2rem 0.5rem);
 				background-color: color(grey, three-quarter);
 				border-bottom: none;
 				color: color(grey, sixteenth);
-				text-decoration: none;
-				@include border-top-radius(rem(2px));
-				@include border-bottom-radius(rem(2px));
 				text-align: center;
+				text-decoration: none;
 				width: 100%;
 				&:hover {
 					background-color: color(blue, three-quarter);
@@ -44,11 +44,27 @@
 		}
 	}
 	.menu-line {
-		@include margin(rem(7px) 0);
+		@include margin(0 0 rem(7px) 0);
 		background: color(grey, sixteenth);
 		border-radius: 2px;
 		height: rem(3px);
-		width: 2.5rem;
+		width: 2rem;
+		&.last {
+			@include margin(null null 0 null);
+		}
+	}
+	.menu-button {
+		@include transition(all 0.1s ease-in);
+		@include padding(0.5rem);
+		@include border-top-radius(rem(2px));
+		@include border-bottom-radius(rem(2px));
+		&:hover,
+		&:active {
+			background-color: color(grey, half);
+		}
+		.sidr-open & {
+			background-color: color(grey, half);
+		}
 	}
 }
 #sidr-0 {
