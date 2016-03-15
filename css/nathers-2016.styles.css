@@ -708,3 +708,34 @@ body {
     content: " ";
     display: block;
     clear: both; }
+
+@media (min-width: 768px) {
+  /* line 5, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  .front .left-column {
+    width: 57.6271186441%;
+    float: left;
+    margin-right: 1.6949152542%; }
+  /* line 8, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  .front .right-column {
+    width: 40.6779661017%;
+    float: right;
+    margin-right: 0;
+    background-color: #edf3f8;
+    border-top-left-radius: 0.125rem;
+    border-top-right-radius: 0.125rem;
+    border-bottom-left-radius: 0.125rem;
+    border-bottom-right-radius: 0.125rem;
+    padding: 2rem; }
+    /* line 14, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+    .front .right-column h2 {
+      border-top: none;
+      margin-top: 0rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+      margin-bottom: 0.675rem; } }
+
+/* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
+.l-content::after {
+  clear: both;
+  content: "";
+  display: table; }
