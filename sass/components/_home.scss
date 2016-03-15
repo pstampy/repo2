@@ -46,6 +46,13 @@
 		}
 		.right-column {
 			@include span(last $tab-cols / $tab-cols * 5 of $tab-cols);
+		}
+	}
+}
+
+@include breakpoint(desktop) {
+	.front {
+		.right-column {
 			.pane-links-links-home-page .view-content {
 				ul {
 					li {

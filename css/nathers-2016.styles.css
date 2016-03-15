@@ -818,13 +818,15 @@ body {
   .front .right-column {
     width: 40.6779661017%;
     float: right;
-    margin-right: 0; }
-    /* line 51, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-    .front .right-column .pane-links-links-home-page .view-content ul li {
-      width: auto; }
-    /* line 55, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-    .front .right-column .pane-links-links-home-page .view-content a {
-      width: auto; } }
+    margin-right: 0; } }
+
+@media (min-width: 1200px) {
+  /* line 58, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  .front .right-column .pane-links-links-home-page .view-content ul li {
+    width: auto; }
+  /* line 62, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  .front .right-column .pane-links-links-home-page .view-content a {
+    width: auto; } }
 
 /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
 .l-content::after {
