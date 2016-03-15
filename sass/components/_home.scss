@@ -3,9 +3,9 @@
 .front {
 	.right-column {
 		h2 {
-				border-top: none;
-				@include rhythm(0,0,0,0.45);
-			}
+			border-top: none;
+			@include rhythm(0,0,0,0.45);
+		}
 		.pane-news-news-home-page {
 			background-color: color(blue, sixteenth);
 			@include border-top-radius(rem(2px));
@@ -16,22 +16,24 @@
 			h2 {
 				@include rhythm(1,0.7,0,0.45);
 			}
-			ul {
-				@include padding(0);
-				@include margin(0);
-				@include display(flex);
-				@include flex-wrap(wrap);
-				@include align-content(stretch);
-				li {
-					list-style: none;
-					@include margin(null 0.5rem 0.5rem null);
-					width: 100%;
+			.view-content{
+				ul {
+					@include padding(0);
+					@include margin(0);
+					@include display(flex);
+					@include flex-wrap(wrap);
+					@include align-content(stretch);
+					li {
+						list-style: none;
+						@include margin(null 0.5rem 0.5rem null);
+						width: 100%;
+					}
 				}
-			}
-			a {
-				@include button(simple, color(blue, three-quarter));
-				width: 100%;
-				text-align: center;
+				a {
+					@include button(simple, color(blue, three-quarter));
+					width: 100%;
+					text-align: center;
+				}
 			}
 		}
 	}
@@ -44,16 +46,16 @@
 		}
 		.right-column {
 			@include span(last $tab-cols / $tab-cols * 5 of $tab-cols);
-			.pane-links-links-home-page {
-			ul {
-				li {
+			.pane-links-links-home-page .view-content {
+				ul {
+					li {
+						width: auto;
+					}
+				}
+				a {
 					width: auto;
 				}
 			}
-			a {
-				width: auto;
-			}
-		}
 		}
 	}
 }

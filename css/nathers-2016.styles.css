@@ -745,8 +745,8 @@ body {
   padding-bottom: 0rem;
   margin-bottom: 0.675rem; }
 
-/* line 19, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-.front .right-column .pane-links-links-home-page ul {
+/* line 20, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+.front .right-column .pane-links-links-home-page .view-content ul {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -767,15 +767,15 @@ body {
   -moz-align-content: stretch;
   align-content: stretch;
   -ms-flex-line-pack: stretch; }
-  /* line 25, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-  .front .right-column .pane-links-links-home-page ul li {
+  /* line 26, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  .front .right-column .pane-links-links-home-page .view-content ul li {
     list-style: none;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     width: 100%; }
 
-/* line 31, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-.front .right-column .pane-links-links-home-page a {
+/* line 32, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+.front .right-column .pane-links-links-home-page .view-content a {
   border: 1px solid #255b83;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 0 #79a4c4;
@@ -793,37 +793,37 @@ body {
   width: 100%;
   text-align: center; }
   /* line 137, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
-  .front .right-column .pane-links-links-home-page a:hover:not(:disabled) {
+  .front .right-column .pane-links-links-home-page .view-content a:hover:not(:disabled) {
     background-color: #3d7299;
     background-image: -webkit-linear-gradient(#3d7299, #265b82);
     background-image: linear-gradient(#3d7299, #265b82);
     box-shadow: inset 0 1px 0 0 #548cb5;
     cursor: pointer; }
   /* line 154, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
-  .front .right-column .pane-links-links-home-page a:active:not(:disabled), .front .right-column .pane-links-links-home-page a:focus:not(:disabled) {
+  .front .right-column .pane-links-links-home-page .view-content a:active:not(:disabled), .front .right-column .pane-links-links-home-page .view-content a:focus:not(:disabled) {
     border: 1px solid #255b83;
     box-shadow: inset 0 0 8px 4px #245376, inset 0 0 8px 4px #245376; }
   /* line 59, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
-  .front .right-column .pane-links-links-home-page a:disabled {
+  .front .right-column .pane-links-links-home-page .view-content a:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
 @media (min-width: 768px) {
-  /* line 42, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  /* line 44, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .left-column {
     width: 57.6271186441%;
     float: left;
     margin-right: 1.6949152542%; }
-  /* line 45, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+  /* line 47, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .right-column {
     width: 40.6779661017%;
     float: right;
     margin-right: 0; }
-    /* line 49, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-    .front .right-column .pane-links-links-home-page ul li {
+    /* line 51, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+    .front .right-column .pane-links-links-home-page .view-content ul li {
       width: auto; }
-    /* line 53, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
-    .front .right-column .pane-links-links-home-page a {
+    /* line 55, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+    .front .right-column .pane-links-links-home-page .view-content a {
       width: auto; } }
 
 /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
