@@ -17,7 +17,24 @@
 				@include border-bottom-radius(rem(2px));
 				@include padding(2rem);
 			}
-			
+			.pane-links-links-home-page {
+				h2 {
+					@include rhythm(1,0.7,0,0.45);
+				}
+				ul {
+					@include padding(0);
+					@include margin(0);
+					@include display(flex);
+					@include flex-wrap(wrap);
+					li {
+						list-style: none;
+						@include margin(null 0.5rem 0.5rem null);
+					}
+				}
+				a {
+					@include button(simple, color(blue, three-quarter));
+				}
+			}
 		}
 	}
 }

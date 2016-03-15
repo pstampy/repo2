@@ -6,6 +6,18 @@
 	.top-link {
 		text-align: right;
 		@include margin(null auto $vert-spacing-unit / 2 auto);
+		ul {
+			@include padding(0);
+			@include margin(0);
+			li {
+				list-style: none;
+				@include display(inline-block);
+				color: color(blue, three-quarter);
+				&.first:after {
+					content: "|";
+				}
+			}
+		}
 		a {
 			color: color(blue, three-quarter);
 			text-decoration: none;
