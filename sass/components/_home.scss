@@ -1,5 +1,42 @@
 // Home page
 
+.front {
+	.right-column {
+		h2 {
+				border-top: none;
+				@include rhythm(0,0,0,0.45);
+			}
+		.pane-news-news-home-page {
+			background-color: color(blue, sixteenth);
+			@include border-top-radius(rem(2px));
+			@include border-bottom-radius(rem(2px));
+			@include padding(2rem);
+		}
+		.pane-links-links-home-page {
+			h2 {
+				@include rhythm(1,0.7,0,0.45);
+			}
+			ul {
+				@include padding(0);
+				@include margin(0);
+				@include display(flex);
+				@include flex-wrap(wrap);
+				@include align-content(stretch);
+				li {
+					list-style: none;
+					@include margin(null 0.5rem 0.5rem null);
+					width: 100%;
+				}
+			}
+			a {
+				@include button(simple, color(blue, three-quarter));
+				width: 100%;
+				text-align: center;
+			}
+		}
+	}
+}
+
 @include breakpoint(tablet) {
 	.front {
 		.left-column {
@@ -7,34 +44,16 @@
 		}
 		.right-column {
 			@include span(last $tab-cols / $tab-cols * 5 of $tab-cols);
-			h2 {
-				border-top: none;
-				@include rhythm(0,0,0,0.45);
-			}
-			.pane-news-news-home-page {
-				background-color: color(blue, sixteenth);
-				@include border-top-radius(rem(2px));
-				@include border-bottom-radius(rem(2px));
-				@include padding(2rem);
-			}
 			.pane-links-links-home-page {
-				h2 {
-					@include rhythm(1,0.7,0,0.45);
-				}
-				ul {
-					@include padding(0);
-					@include margin(0);
-					@include display(flex);
-					@include flex-wrap(wrap);
-					li {
-						list-style: none;
-						@include margin(null 0.5rem 0.5rem null);
-					}
-				}
-				a {
-					@include button(simple, color(blue, three-quarter));
+			ul {
+				li {
+					width: auto;
 				}
 			}
+			a {
+				width: auto;
+			}
+		}
 		}
 	}
 }
