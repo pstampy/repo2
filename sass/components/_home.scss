@@ -3,10 +3,10 @@
 @include breakpoint(tablet) {
 	.front {
 		.left-column {
-			@include span(first $tab-cols / $tab-cols * 8 of $tab-cols);
+			@include span(first $tab-cols / $tab-cols * 7 of $tab-cols);
 		}
 		.right-column {
-			@include span(last $tab-cols / $tab-cols * 4 of $tab-cols);
+			@include span(last $tab-cols / $tab-cols * 5 of $tab-cols);
 			background-color: color(blue, sixteenth);
 			@include border-top-radius(rem(2px));
 			@include border-bottom-radius(rem(2px));
