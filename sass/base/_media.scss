@@ -1,0 +1,15 @@
+// Media
+
+figure,
+figure.image {
+	width: 100%;
+	height: auto;
+	background: none;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	figcaption {
+		@extend %base-caption;
+	}
+}

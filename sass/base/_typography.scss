@@ -128,3 +128,10 @@ body {
 		border-bottom: 1px solid color(red, half);
 	}
 }
+
+%base-caption {
+	@include weight(regular);
+	color: color(grey, half);
+	@include padding(0.5rem 0 0 0);
+	@include adjust-font-size-to($base-font-size * 0.8);
+}
