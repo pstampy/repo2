@@ -741,6 +741,23 @@ figure.image {
     display: block;
     clear: both; }
 
+@media (min-width: 768px) {
+  /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
+  .not-front .l-content::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 12, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_page.scss */
+  .not-front .left-column {
+    width: 23.7288135593%;
+    float: left;
+    margin-right: 1.6949152542%; }
+  /* line 15, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_page.scss */
+  .not-front .right-column {
+    width: 74.5762711864%;
+    float: right;
+    margin-right: 0; } }
+
 /* line 5, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
 .front .right-column h2 {
   border-top: none;
