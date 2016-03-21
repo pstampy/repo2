@@ -42,6 +42,9 @@ body {
 		@include padding(rem(32px) 0 rem(14.4px) 0);
 		@include weight(light);
 		border-top: 1px dotted color(green);
+		.front & {
+			border: none;
+		}
 	}
 	h3	{
 		@include adjust-font-size-to(22.4px);
