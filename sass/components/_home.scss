@@ -2,20 +2,13 @@
 
 .front {
 	.right-column {
-		h2 {
+		/* h2 {
 			border-top: none;
-			@include rhythm(0,0,0,0.45);
-		}
+		} */
 		.pane-news-news-home-page {
-			background-color: color(blue, sixteenth);
-			@include border-top-radius(rem(2px));
-			@include border-bottom-radius(rem(2px));
-			@include padding(2rem);
+			@extend %blue-box;
 		}
 		.pane-links-links-home-page {
-			h2 {
-				@include rhythm(1,0.7,0,0.45);
-			}
 			.view-content{
 				ul {
 					@include padding(0);
@@ -30,7 +23,7 @@
 					}
 				}
 				a {
-					@include button(simple, color(blue, three-quarter));
+					@include button(flat, color(blue, three-quarter));
 					width: 100%;
 					text-align: center;
 				}

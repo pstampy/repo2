@@ -98,7 +98,6 @@
         <?php print render($search_block['content']); ?>        
       </div>
       </div>
-      <h1 class="site-name"><?php print $site_name; ?></a></h1>
     </div>
   </header>
 

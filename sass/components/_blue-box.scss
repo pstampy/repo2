@@ -1,0 +1,14 @@
+// Blue box
+
+%blue-box {
+	@include border-top-radius(rem(3.2px));
+	@include border-bottom-radius(rem(3.2px));
+	@include margin(rem(11.2px) 0 rem(24px) 0);
+	@include padding(rem(24px) rem(24px) rem(16px) rem(24px));
+	background-color: color(blue, sixteenth);
+	h2 {
+		border: none;
+		@include margin(0);
+		@include padding(rem(6.4px) null null null);
+	}
+}

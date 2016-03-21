@@ -1,0 +1,27 @@
+// Tables
+
+table {
+	width: 100%;
+	@include margin(0);
+	@include padding(0);
+	th, td {
+		text-align: left;
+		border-bottom: 1px solid color(grey, half);
+		@include padding(rem(6.4px) rem(12.8px));
+	}
+	th {
+		vertical-align: baseline;
+		white-space: nowrap;
+		@include background(none);
+		@include weight(semibold);
+		line-height: rem(20.8px);
+	}
+	td {
+		border-color: color(grey, eighth);
+		border-bottom: 1px solid color(grey, eighth);
+		color: color(grey, three-quarter);
+		@include weight(light);
+		line-height: rem(28.8px);
+		vertical-align: top;
+	}
+}
