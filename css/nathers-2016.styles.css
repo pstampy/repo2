@@ -494,8 +494,20 @@ table {
     #sidr-0 ul li:hover a {
       box-shadow: none; }
 
-@media (min-width: 768px) {
+/* line 119, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+.pane-main-menu .menu {
+  padding: 0; }
   /* line 121, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  .pane-main-menu .menu li {
+    list-style: none; }
+    /* line 123, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    .pane-main-menu .menu li a:link {
+      font-family: "montserrat semibold", arial, helvetica, sans-serif;
+      font-size: 1.2rem;
+      line-height: 1.5rem; }
+
+@media (min-width: 768px) {
+  /* line 133, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
     width: 100%;
     margin: 0; }
@@ -504,11 +516,11 @@ table {
       clear: both;
       content: "";
       display: table; }
-    /* line 125, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    /* line 137, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #sidr-wrapper-0 {
       display: none !important;
       visibility: hidden; }
-    /* line 129, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+    /* line 141, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #superfish-1 {
       display: flex !important;
       -webkit-box-lines: single;
@@ -540,7 +552,7 @@ table {
       margin-top: 3px; } }
 
 @media (min-width: 1200px) {
-  /* line 141, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
+  /* line 153, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
     -webkit-box-flex: 4;
     -moz-box-flex: 4;

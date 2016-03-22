@@ -115,6 +115,18 @@
     }
 	}
 }
+.pane-main-menu {
+	.menu {
+		@include padding(0);
+		li {
+			list-style: none;
+			a:link {
+				@include weight(semibold);
+				@include adjust-font-size-to(19.2px);
+			}
+		}
+	}
+}
 
 // Responsiveness 
 @include breakpoint(tablet) {
