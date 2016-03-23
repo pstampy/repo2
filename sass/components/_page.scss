@@ -3,3 +3,17 @@
 .l-page {
 	@include container;
 }
+
+@include breakpoint(tablet) {
+	.not-front {
+		.l-content {
+			@include clearfix;
+		}
+		.left-column {
+			@include span(first $tab-cols / $tab-cols * 3 of $tab-cols);
+		}
+		.right-column {
+			@include span(last $tab-cols / $tab-cols * 9 of $tab-cols);
+		}
+	}
+}

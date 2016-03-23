@@ -5,7 +5,6 @@ $font-weights: black bold extrabold harline light regular semibold ultralight;
 $font-stack: 'montserrat regular', arial, helvetica, sans-serif;
 $rhythm-unit: 'rem';
 
-@include establish-baseline($base-font-size);
 @each $font-weight in $font-weights {
 	@include font-face("montserrat #{$font-weight}", "../fonts/montserrat-#{$font-weight}-webfont", $file-formats);
 }
@@ -20,52 +19,64 @@ body {
 	}
 }
 .l-page {
-	@include rhythm(0,0,0,0);
-	@include adjust-font-size-to($base-font-size);
 	font-family: $font-stack;
 	color: color(grey, three-quarter);
-
 
 	// Headings
 
 	h1, h2, h3, h4, h5, h6 {
 		color: color(green);
+		font-weight: normal;
 	}
 	h1	{
-		@include adjust-font-size-to($base-font-size * 2.5);
-		@include rhythm(0,0,0,0.5);
+		@include adjust-font-size-to(48px);
+		@include adjust-leading-to(2.0);
+		@include padding(0 0 rem(24px) 0);
 		@include weight(ultralight);
+		@include margin(0);
 	}
 	h2	{
-		@include adjust-font-size-to($base-font-size * 2);
-		@include rhythm(1,0.7,0,0.45);
-		@include leading-border(1px, 1, $base-font-size, dotted);
+		@include adjust-font-size-to(32px);
+		@include adjust-leading-to(1.6);
+		@include margin(rem(22.4px) 0 0 0);
+		@include padding(rem(32px) 0 rem(14.4px) 0);
 		@include weight(light);
+		border-top: 1px dotted color(green);
+		.front & {
+			border: none;
+		}
 	}
 	h3	{
-		@include adjust-font-size-to($base-font-size * 1.4);
-		@include rhythm(0.5,0,0,0.2);
+		@include adjust-font-size-to(22.4px);
+		@include padding(rem(11.2px) 0 rem(6.72px) 0);
+		@include margin(0);
+		@include adjust-leading-to(1.12);
 		@include weight(regular);
-		@include adjust-leading-to(1.0);
 	}
 	h4	{
-		@include adjust-font-size-to($base-font-size * 1.1);
-		@include rhythm(0.5,0,0,0.3);
+		@include adjust-font-size-to(17.6px);
+		@include margin(0);
+		@include padding(rem(8.8px) 0 rem(5.28px) 0);
 		@include weight(semibold);
+		line-height: rem(22.88px);
 	}
 	h5	{
-		@include adjust-font-size-to($base-font-size * 0.85);
-		@include rhythm(0.5,0,0,0.5);
+		@include adjust-font-size-to(13.6px);
+		@include margin(0);
+		@include padding(rem(6.8px) 0);
 		@include weight(semibold);
+		line-height: rem(19.72px);
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: rem(1.36px);
 	}
 	h6	{
-		@include adjust-font-size-to($base-font-size * 0.85);
-		@include rhythm(0.5,0,0,0.5);
+		@include adjust-font-size-to(13.6px);
+		@include margin(0);
+		@include padding(rem(6.8px) 0);
 		@include weight(regular);
+		line-height: rem(19.04px);
 		text-transform: uppercase;
-		letter-spacing: 0.1em;
+		letter-spacing: rem(1.36px);
 	}
 	em {
 		font-style: italic;
@@ -79,40 +90,40 @@ body {
 	}
 
 	p, ul, ol {
-		@include adjust-leading-to(1.2);
+		@include margin(0);
+		@include padding(0 0 rem(14.4px) 0);
 		@include weight(light);
-		@include rhythm(0,0,0,0.9);
 		color: color(grey, three-quarter);
+		line-height: rem(25.6px);
 	}
 	ul {
-		@include padding(0);
-		@include margin(0);
-		list-style: none;
-		li {
-			@include padding(null null null 1rem);
-			text-indent: -1rem;
-			&:before {
-				content: "\025FC\00a0";
-				color: color(red);
-				@include padding(null 1rem null null);
-			}
-		}
+		@include padding(0 0 rem(14.4px) rem(19.2px));
 	}
 	ol {
-		padding-left: 1.4em;
+		@include padding(0 0 rem(14.4px) rem(22.4px));
+		@include margin(0);
+	}
+	ul li {
+		list-style-image: url('../images/bullet.png');
+		padding-left: rem(3.2px);
 	}
 	ol li {
 		list-style: decimal;	
 	}
 
-	p+ul, 
-	p+ol {
-		margin-top: -0.9em;
+	p + ul, 
+	p + ol {
+		@include margin(rem(-14.4px) null null null);
 	}
 	.l-main {
 		a {
 			@extend %base-link;
 		}
+	}
+	blockquote {
+		line-height: rem(16px);
+		@include padding(0 rem(22.4px));
+		@include margin(0);
 	}
 }
 
@@ -120,25 +131,26 @@ body {
 	@include transition(all 0.1s ease-in);
 	&:link,
 	&:visited {
-		@include trailing-border (1px, 1, $base-font-size, dotted);
+		@include padding(null null rem(1px) null);
+		@include weight(regular);
+		border-bottom: 1px dotted color(grey, eighth);
 		color: color(blue, three-quarter);
-		padding-bottom: 1px;
 		text-decoration: none;
 	}
 	&:hover {
 		color: color(blue);
-		border-bottom-color: color(blue, three-quarter);
-		border-bottom-style: solid;
+		border-bottom: 1px solid color(blue, three-quarter);
 	}
 	&:active {
 		color: color(red, three-quarter);
-		border-bottom: 1px solid color(red, half);
+		border-bottom-color: color(red, half);
 	}
 }
 
 %base-caption {
+	@include adjust-font-size-to(12.8px);
+	@include padding(rem(6.4px) 0 0 0);
 	@include weight(regular);
 	color: color(grey, half);
-	@include padding(0.5rem 0 0 0);
-	@include adjust-font-size-to($base-font-size * 0.8);
+	line-height: rem(16.64px);
 }

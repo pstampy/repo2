@@ -5,6 +5,9 @@ figure.image {
 	width: 100%;
 	height: auto;
 	background: none;
+	@include margin(0);
+	@include padding(0 0 rem(16px) 0);
+	line-height: rem(16px);
 	img {
 		width: 100%;
 		height: auto;
