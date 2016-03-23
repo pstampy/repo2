@@ -13,6 +13,9 @@
 				list-style: none;
 				@include display(inline-block);
 				color: color(blue, three-quarter);
+				&:before {
+					content: "";
+				}
 				&.first:after {
 					content: "|";
 				}

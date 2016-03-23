@@ -44,8 +44,9 @@ body {
 	}
 	h3	{
 		@include adjust-font-size-to($base-font-size * 1.4);
-		@include rhythm(0.5,0,0,0.3);
+		@include rhythm(0.5,0,0,0.2);
 		@include weight(regular);
+		@include adjust-leading-to(1.0);
 	}
 	h4	{
 		@include adjust-font-size-to($base-font-size * 1.1);
@@ -84,15 +85,21 @@ body {
 		color: color(grey, three-quarter);
 	}
 	ul {
-		padding-left: 1.2em;
+		@include padding(0);
+		@include margin(0);
+		list-style: none;
+		li {
+			@include padding(null null null 1rem);
+			text-indent: -1rem;
+			&:before {
+				content: "\025FC\00a0";
+				color: color(red);
+				@include padding(null 1rem null null);
+			}
+		}
 	}
 	ol {
 		padding-left: 1.4em;
-	}
-	ul li {
-		color: #c84d54;
-		list-style: square;
-		padding-left: 0.2em;
 	}
 	ol li {
 		list-style: decimal;	

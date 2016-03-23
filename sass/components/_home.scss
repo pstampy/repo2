@@ -24,13 +24,17 @@
 					@include flex-wrap(wrap);
 					@include align-content(stretch);
 					li {
-						list-style: none;
-						@include margin(null 0.5rem 0.5rem null);
+						@include margin(null 0.5rem null null);
+						@include padding(0);
+						text-indent: 0;
 						width: 100%;
+						&:before {
+							content: "";
+						}
 					}
 				}
 				a {
-					@include button(simple, color(blue, three-quarter));
+					@include button(flat, color(blue, three-quarter));
 					width: 100%;
 					text-align: center;
 				}
