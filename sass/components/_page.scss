@@ -14,6 +14,7 @@
 		}
 		.right-column {
 			@include span(last $tab-cols / $tab-cols * 9 of $tab-cols);
+			@include padding(rem(27.2px) null rem(27.2px) rem(27.2px));
 		}
 	}
 }

@@ -104,18 +104,50 @@
 		}
 	}
 	ul li {
-    display: block;
-    line-height: auto;
-    border: none;
-    &:hover {
-    	background: none;
-    	a {
-    		box-shadow: none;
-    	}
-    }
+		display: block;
+		line-height: auto;
+		border: none;
+		&:hover {
+			background: none;
+			a {
+				box-shadow: none;
+			}
+		}
 	}
 }
 .pane-main-menu {
+	// Turn off links that aren't in the active trail.
+	.menu-block-wrapper > .menu {
+		> li {
+			&:not(.active-trail) {
+				display: none;
+				visibility: hidden;
+			}
+			> a {
+				@include adjust-font-size-to(19.2px);
+				@include padding(rem(28.8px) 0 rem(15.36px) 0);
+				@include weight(semibold);
+				border-bottom: none;
+				color: color(green);
+				line-height: rem(23.04px);
+				display: block;
+			}
+			.menu {
+				li {
+					@include padding(rem(8px) 0);
+					border-top: 1px dotted color(grey, eighth);
+					a {
+						@include adjust-font-size-to(16px);
+						@include padding(0 rem(8px));
+						@include weight(regular);
+						display: block;
+						border: none;
+						line-height: rem(19.2px);
+					}
+				}
+			}
+		}
+	}
 	.menu {
 		@include padding(0);
 		li {
