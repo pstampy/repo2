@@ -130,8 +130,22 @@ body {
 .form-submit {
 	@include button(flat, color(blue, three-quarter));
 }
+.l-page .buttons {
+	@include margin(0);
+	@include padding(0);
+	li {
+		list-style: none;
+		@include margin(null null 0.5rem null);
+		@include padding(0);
+		a:link {
+			@include button(flat, color(blue, three-quarter));
+			color: color(grey, sixteenth);
+			border: none;
+		}
+	}
+}
 
-.inline-label + p {
+.label-inline + p {
 	display: inline;
 }
 %base-link {
