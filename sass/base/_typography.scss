@@ -127,6 +127,13 @@ body {
 	}
 }
 
+.form-submit {
+	@include button(flat, color(blue, three-quarter));
+}
+
+.inline-label + p {
+	display: inline;
+}
 %base-link {
 	@include transition(all 0.1s ease-in);
 	&:link,

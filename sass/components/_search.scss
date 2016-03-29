@@ -1,7 +1,18 @@
 // Search
-
-.search {
-	//@include span(last $mob-cols / $mob-cols * 5 of $mob-cols);
+.search-form {
+	@include margin($vert-spacing-unit null);
+	fieldset {
+		@include margin($vert-spacing-unit null);
+		label {
+			display: inline !important;
+		}
+	}
+	.form-submit {
+		@include border-left-radius(0);
+	}
+}
+.search,
+.search-form {
 	@include flex(1);
 	.container-inline {
 		@include display(flex);
@@ -35,6 +46,7 @@
 			@include transition(all 0.1s ease-in);
 			background-color: color(blue, three-quarter);
 			@include border-right-radius(rem(2px));
+			@include border-left-radius(0);
 			@include weight(light);
 			border:none;
 			color: color(grey, sixteenth);
