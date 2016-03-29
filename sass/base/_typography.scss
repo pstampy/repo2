@@ -145,6 +145,18 @@ body {
 		color: color(red, three-quarter);
 		border-bottom-color: color(red, half);
 	}
+	&[href$=".pdf"] {
+		background: url('../images/icon-pdf.png') no-repeat left center;
+		@include padding (null null null rem(24px));
+	}
+	&[href$=".docx"],
+	&[href$=".doc"] {
+		background: url('../images/icon-doc.png') no-repeat left center;
+		@include padding (null null null rem(24px));
+	}
+	span.ext {
+		background: url('../images/icon-externallink.png') no-repeat center;
+	}
 }
 
 %base-caption {

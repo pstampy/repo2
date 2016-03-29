@@ -42,6 +42,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icon-doc.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 817,
+		"inputAbbreviatedPath": "\/images\/icon-doc.png",
+		"outputAbbreviatedPath": "\/images\/icon-doc.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-externallink.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 131,
+		"inputAbbreviatedPath": "\/images\/icon-externallink.png",
+		"outputAbbreviatedPath": "\/images\/icon-externallink.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon-pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 598,
+		"inputAbbreviatedPath": "\/images\/icon-pdf.png",
+		"outputAbbreviatedPath": "\/images\/icon-pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/subItem-arrow.png": {
 		"fileType": 32768,
 		"ignore": 0,

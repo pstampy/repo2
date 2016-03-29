@@ -183,8 +183,19 @@ body {
   .l-page .l-main a:active, .l-header .top-link a:active, .l-footer a:active {
     color: #c84d54;
     border-bottom-color: #da888d; }
+  /* line 148, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
+  .l-page .l-main a[href$=".pdf"], .l-header .top-link a[href$=".pdf"], .l-footer a[href$=".pdf"] {
+    background: url("../images/icon-pdf.png") no-repeat left center;
+    padding-left: 1.5rem; }
+  /* line 152, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
+  .l-page .l-main a[href$=".docx"], .l-header .top-link a[href$=".docx"], .l-footer a[href$=".docx"], .l-page .l-main a[href$=".doc"], .l-header .top-link a[href$=".doc"], .l-footer a[href$=".doc"] {
+    background: url("../images/icon-doc.png") no-repeat left center;
+    padding-left: 1.5rem; }
+  /* line 157, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
+  .l-page .l-main a span.ext, .l-header .top-link a span.ext, .l-footer a span.ext {
+    background: url("../images/icon-externallink.png") no-repeat center; }
 
-/* line 150, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
+/* line 162, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 figure figcaption,
 figure.image figcaption {
   font-size: 0.8rem;
