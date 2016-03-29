@@ -5,17 +5,14 @@
 	@include margin(null 0.5rem $vert-spacing-unit 0.5rem);
 	.top-link {
 		text-align: right;
-		@include margin(null auto $vert-spacing-unit / 2 auto);
+		@include margin(null null $vert-spacing-unit / 2 null);
 		ul {
 			@include padding(0);
 			@include margin(0);
 			li {
-				list-style: none;
 				@include display(inline-block);
 				color: color(blue, three-quarter);
-				&:before {
-					content: "";
-				}
+				list-style: none;
 				&.first:after {
 					content: "|";
 				}

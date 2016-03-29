@@ -17,13 +17,11 @@
 					@include flex-wrap(wrap);
 					@include align-content(stretch);
 					li {
-						@include margin(null 0.5rem null null);
+						@include margin(0 0.5rem 0.5rem 0);
 						@include padding(0);
+						list-style: none;
 						text-indent: 0;
 						width: 100%;
-						&:before {
-							content: "";
-						}
 					}
 				}
 				a {
