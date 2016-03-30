@@ -145,9 +145,6 @@ body {
 	}
 }
 
-.label-inline + p {
-	display: inline;
-}
 %base-link {
 	@include transition(all 0.1s ease-in);
 	&:link,

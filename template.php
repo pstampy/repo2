@@ -90,9 +90,9 @@ function nathers_2016_file_link($variables) {
 
     // Use the description as the link text if available.
     if (empty($file->description)) {
-        $link_text = $file->filename . $file->extension . ' ' . format_size($file->filesize);
+        $link_text = $file->filename . ' <span class="file-icon">' . $icon . ' ' . $file->extension . ' ' . format_size($file->filesize) . '</span>';
     } else {
-        $link_text = $file->description . ' ' . $icon . ' ' . $file->extension . ' ' . format_size($file->filesize);
+        $link_text = $file->description . ' <span class="file-icon">' . $icon . ' ' . $file->extension . ' ' . format_size($file->filesize) . '</span>';
         $options['attributes']['title'] = check_plain($file->filename);
     }
 
