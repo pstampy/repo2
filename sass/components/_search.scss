@@ -4,15 +4,15 @@
 		@include margin(0 0 $vert-spacing-unit 0);
 	}
 	h2 {
-		display: list-item;
-		list-style-image: url('../images/bullet.png');
+		@include adjust-font-size-to(16px);
 		@include margin(0 0 0 rem(12px));
 		@include padding(0 0 rem(14.4px) 0);
 		@include weight(light);
-		color: color(grey, three-quarter);
-		line-height: rem(25.6px);
-		@include adjust-font-size-to(16px);
 		border: none;
+		color: color(grey, three-quarter);
+		display: list-item;
+		line-height: rem(25.6px);
+		list-style-image: url('../images/bullet.png');
 	}
 	p {
 		@include margin(null null null rem(12px));
