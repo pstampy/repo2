@@ -47,7 +47,7 @@ function nathers_2016_file_formatter_table($variables) {
 
 function nathers_2016_file_link($variables) {
     $file = $variables['file'];
-    $icon_directory = $variables['icon_directory'];
+    $icon_directory = drupal_get_path('theme', 'nathers_2016') . '/images';
 
     $url = file_create_url($file->uri);
 
@@ -71,28 +71,28 @@ function nathers_2016_file_link($variables) {
 
     $mimetype = file_get_mimetype($file->uri);
 
-    /*$icon = theme('file_icon', array(
+    $icon = theme('file_icon', array(
         'file' => $file,
         'icon_directory' => $icon_directory,
         'alt' => !empty($mime_name[$mimetype]) ? $mime_name[$mimetype] : t('File'),
-    ));*/
+    ));
 
     // Set options as per anchor format described at
     // http://microformats.org/wiki/file-format-examples
     $options = array(
         'attributes' => array(
-        'type' => $file->filemime . '; length=' . $file->filesize,
+            'type' => $file->filemime . '; length=' . $file->filesize,
         ),
+        'html' => true,
     );
     // Get the file extension
     $file->extension = strtoupper(pathinfo($file->filename, PATHINFO_EXTENSION));
 
     // Use the description as the link text if available.
-    dsm($file);
     if (empty($file->description)) {
-        $link_text = $file->filename . ' (' . $file->extension . ', ' . format_size($file->filesize) . ')';
+        $link_text = $file->filename . $file->extension . ' ' . format_size($file->filesize);
     } else {
-        $link_text = $file->description . ' (' . $file->extension . ', ' . format_size($file->filesize) . ')';
+        $link_text = $file->description . ' ' . $icon . ' ' . $file->extension . ' ' . format_size($file->filesize);
         $options['attributes']['title'] = check_plain($file->filename);
     }
 

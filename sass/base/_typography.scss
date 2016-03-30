@@ -167,12 +167,12 @@ body {
 		border-bottom-color: color(red, half);
 	}
 	&[href$=".pdf"] {
-		background: url('../images/icon-pdf.png') no-repeat left center;
+		background: url('../images/application-pdf.png') no-repeat left center;
 		@include padding (null null null rem(24px));
 	}
 	&[href$=".docx"],
 	&[href$=".doc"] {
-		background: url('../images/icon-doc.png') no-repeat left center;
+		background: url('../images/x-office-document.png') no-repeat left center;
 		@include padding (null null null rem(24px));
 	}
 	span.ext {

@@ -31,6 +31,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/images\/application-pdf.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 598,
+		"inputAbbreviatedPath": "\/images\/application-pdf.png",
+		"outputAbbreviatedPath": "\/images\/application-pdf.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bullet.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -38,17 +49,6 @@
 		"initialSize": 78,
 		"inputAbbreviatedPath": "\/images\/bullet.png",
 		"outputAbbreviatedPath": "\/images\/bullet.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/icon-doc.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 817,
-		"inputAbbreviatedPath": "\/images\/icon-doc.png",
-		"outputAbbreviatedPath": "\/images\/icon-doc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -64,17 +64,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/icon-pdf.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 598,
-		"inputAbbreviatedPath": "\/images\/icon-pdf.png",
-		"outputAbbreviatedPath": "\/images\/icon-pdf.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/subItem-arrow.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -82,6 +71,28 @@
 		"initialSize": 400,
 		"inputAbbreviatedPath": "\/images\/subItem-arrow.png",
 		"outputAbbreviatedPath": "\/images\/subItem-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/text-plain.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 220,
+		"inputAbbreviatedPath": "\/images\/text-plain.png",
+		"outputAbbreviatedPath": "\/images\/text-plain.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/x-office-document.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 817,
+		"inputAbbreviatedPath": "\/images\/x-office-document.png",
+		"outputAbbreviatedPath": "\/images\/x-office-document.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
