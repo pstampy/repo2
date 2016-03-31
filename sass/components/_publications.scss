@@ -1,0 +1,34 @@
+// Publications
+
+.page-publications {
+	img {
+		display: none;
+	}
+}
+
+// Responsiveness
+
+@include breakpoint(tablet) {
+	.page-publications {
+		img {
+			display: block;
+			float: right;
+			@include margin(0 0 1rem 1rem);
+		}
+	}
+}
+@include breakpoint(desktop) {
+	.page-publications {
+		.view-content {
+			@include display(flex);
+			@include flex-wrap(wrap);
+			@include justify-content(space-between);
+		}
+		.publication-item {
+			@include flex (0 45%);
+			&.views-row-odd {
+				@include margin(null 1rem 1rem 0);
+			}
+		}
+	}
+}
