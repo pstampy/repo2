@@ -1,8 +1,29 @@
 // Publications
 
 .page-publications {
-	img {
+	.publication-item {
+		@extend %blue-box;
+		background-color: color(grey, sixteenth);
+	}
+	h2 + img {
 		display: none;
+	}
+	span.file-icon {
+		@include adjust-font-size-to(12.8px);
+		line-height: rem(25.6px);
+		&.txt {
+			background: url('../images/text-plain.png') no-repeat left center;
+			@include padding(rem(2px) 0 rem(2px) rem(16px));
+		}
+		&.doc,
+		&.docx {
+			background: url('../images/x-office-document.png') no-repeat left center;
+			@include padding(rem(2px) 0 rem(2px) rem(16px));
+		}
+		&.pdf {
+			background: url('../images/application-pdf.png') no-repeat left center;
+			@include padding(rem(2px) 0 rem(2px) rem(16px));
+		}
 	}
 }
 
@@ -10,7 +31,7 @@
 
 @include breakpoint(tablet) {
 	.page-publications {
-		img {
+		h2 + img {
 			display: block;
 			float: right;
 			@include margin(0 0 1rem 1rem);
@@ -22,13 +43,11 @@
 		.view-content {
 			@include display(flex);
 			@include flex-wrap(wrap);
-			@include justify-content(space-between);
+			@include justify-content(space-around);
 		}
 		.publication-item {
 			@include flex (0 45%);
-			&.views-row-odd {
-				@include margin(null 1rem 1rem 0);
-			}
+			@include margin(0.5rem);
 		}
 	}
 }

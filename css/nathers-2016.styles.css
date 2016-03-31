@@ -1244,7 +1244,7 @@ select {
   display: table; }
 
 /* line 3, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_blue-box.scss */
-.front .right-column .pane-news-news-home-page {
+.front .right-column .pane-news-news-home-page, .page-publications .publication-item {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
@@ -1253,24 +1253,46 @@ select {
   padding: 1.5rem 1.5rem 1rem;
   background-color: #edf3f8; }
   /* line 9, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_blue-box.scss */
-  .front .right-column .pane-news-news-home-page h2 {
+  .front .right-column .pane-news-news-home-page h2, .page-publications .publication-item h2 {
     border: none;
     margin: 0;
     padding-top: 0.4rem; }
 
 /* line 4, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
-.page-publications img {
+.page-publications .publication-item {
+  background-color: #ededed; }
+
+/* line 8, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+.page-publications h2 + img {
   display: none; }
 
+/* line 11, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+.page-publications span.file-icon {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  line-height: 1.6rem; }
+  /* line 14, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+  .page-publications span.file-icon.txt {
+    background: url("../images/text-plain.png") no-repeat left center;
+    padding: 0.125rem 0 0.125rem 1rem; }
+  /* line 18, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+  .page-publications span.file-icon.doc, .page-publications span.file-icon.docx {
+    background: url("../images/x-office-document.png") no-repeat left center;
+    padding: 0.125rem 0 0.125rem 1rem; }
+  /* line 23, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+  .page-publications span.file-icon.pdf {
+    background: url("../images/application-pdf.png") no-repeat left center;
+    padding: 0.125rem 0 0.125rem 1rem; }
+
 @media (min-width: 768px) {
-  /* line 13, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
-  .page-publications img {
+  /* line 34, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+  .page-publications h2 + img {
     display: block;
     float: right;
     margin: 0 0 1rem 1rem; } }
 
 @media (min-width: 1200px) {
-  /* line 22, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+  /* line 43, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications .view-content {
     display: -webkit-box;
     display: -moz-box;
@@ -1286,16 +1308,16 @@ select {
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: justify; }
-  /* line 27, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute; }
+  /* line 48, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications .publication-item {
     -webkit-box-flex: 0;
     -moz-box-flex: 0;
@@ -1303,9 +1325,5 @@ select {
     -webkit-flex: 0 45%;
     -moz-flex: 0 45%;
     -ms-flex: 0 45%;
-    flex: 0 45%; }
-    /* line 29, /Users/Jesse/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
-    .page-publications .publication-item.views-row-odd {
-      margin-right: 1rem;
-      margin-bottom: 1rem;
-      margin-left: 0; } }
+    flex: 0 45%;
+    margin: 0.5rem; } }
