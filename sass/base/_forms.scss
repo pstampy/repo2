@@ -1,0 +1,150 @@
+// Forms
+.description {
+	display: none;
+	visibility: hidden;
+}
+.views-exposed-form {
+	.views-exposed-widget {
+		&.views-submit-button {
+			@include margin(null auto);
+			float: none !important;
+			width: 100%;
+			text-align: center;
+			input {
+				@include margin(0);
+			}
+		}
+		&:not(.views-submit-button) {
+			@include margin(null null $vert-spacing-unit / 2 null);
+			@include padding(0.5rem);
+			border: 1px dotted color(grey, eighth);
+			float: none;
+			.views-operator,
+			.dependent-options {
+				@include margin(null null $vert-spacing-unit / 2 null);
+				width: 100%;
+				&#edit-field-date-value-min-wrapper {
+					@include margin(null 0.5rem null null);
+				}
+			}
+			&.views-widget-filter-field_date_value .views-widget {
+				@include display(flex);
+				@include justify-content(space-between);
+			}
+		}
+	}
+}
+
+.container-inline-date .form-item input,
+.container-inline-date .form-item,
+.views-exposed-form .container-inline-date .date-padding {
+	width: 100%;
+}
+ 
+fieldset {
+  background-color: transparent;
+  border: 0;
+  @include margin(0);
+  @include padding(0);
+}
+
+legend {
+  font-weight: 600;
+  @include margin(null null $vert-spacing-unit / 2 null);
+  @include padding(0);
+}
+
+label {
+  display: block;
+  @include weight(regular);
+  @include margin(null null $vert-spacing-unit / 2 null);
+}
+
+input,
+select,
+textarea {
+  display: block;
+  font-family: $font-stack;
+  font-size: 1rem;
+}
+
+#{$all-text-inputs},
+select[multiple],
+select {
+	@include adjust-font-size-to(12px);
+	@include appearance(none);
+	@include border-left-radius(0);
+	@include border-right-radius(0);
+	@include padding(0.2rem);
+	@include weight(light);
+	@include weight(light);
+	background-color: color(grey, sixteenth);
+	color: color(grey, three-quarter);
+  border: 1px solid color(grey, half);
+  transition: border-color 0.2s ease-in;
+  width: 100%;
+
+  &:hover {
+    border-color: shade(color(grey, half), 20%);
+  }
+
+  &:focus {
+    border-color: color(red);
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade(color(grey), 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: color(grey, half);
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+select {
+	background-image: url('../images/select-arrow-off.png');
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	@include transition(background-image 0.15s ease-in);
+	&:hover {
+		background-image: url('../images/select-arrow.png');
+	}
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $vert-spacing-unit / 2;
+}
+
+[type="file"] {
+  margin-bottom: $vert-spacing-unit;
+  width: 100%;
+}
+
+// Responsiveness
+
+@include breakpoint(desktop) {
+	.views-exposed-form .views-exposed-widgets {
+		@include display(flex);
+		@include justify-content(space-between);
+		@include flex-wrap(wrap);
+		> div {
+			@include flex(1 0 30%);
+			@include margin(null 0.5rem);
+		}
+		.views-submit-button {
+			@include flex(0);
+		}
+	}
+}
