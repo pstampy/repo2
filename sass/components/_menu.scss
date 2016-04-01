@@ -117,6 +117,7 @@
 }
 	// Turn off links that aren't in the active trail.
 .menu-block-wrapper {
+	display: none;
 	// First level
 	> .menu {
 		@include padding(0);
@@ -188,6 +189,11 @@
 			@include margin(3px null null null);
 		}
 
+	}
+}
+@include breakpoint(tablet) {
+	.menu-block-wrapper {
+		display: block;
 	}
 }
 @include breakpoint(desktop) {
