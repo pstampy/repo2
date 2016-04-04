@@ -506,7 +506,16 @@ select {
       flex: 1 0 30%;
       margin-right: 0.5rem;
       margin-left: 0.5rem; }
-    /* line 144, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
+      /* line 143, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
+      .view-news .views-exposed-form .views-exposed-widgets > div {
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        box-flex: 1;
+        -webkit-flex: 1 0 45%;
+        -moz-flex: 1 0 45%;
+        -ms-flex: 1 0 45%;
+        flex: 1 0 45%; }
+    /* line 147, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widgets .views-submit-button {
       -webkit-box-flex: 0;
       -moz-box-flex: 0;

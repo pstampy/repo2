@@ -142,6 +142,9 @@ select {
 		> div {
 			@include flex(1 0 30%);
 			@include margin(null 0.5rem);
+			.view-news & {
+				@include flex(1 0 45%);
+			}
 		}
 		.views-submit-button {
 			@include flex(0);
