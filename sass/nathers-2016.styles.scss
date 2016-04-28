@@ -1,5 +1,7 @@
-@import "susy";
-@import "bourbon";
+/*@import "susy";*/
+@import "../node_modules/susy/sass/susy";
+/*@import "bourbon";*/
+@import "../node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "../libraries/sass-vertical-rhythm/sass/sass-vertical-rhythm";
 
 // Import variables, abstractions, base styles and components.

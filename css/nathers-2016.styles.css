@@ -1,3 +1,5 @@
+/*@import "susy";*/
+/*@import "bourbon";*/
 /*********************
 BREAKPOINTS
 *********************/
@@ -49,24 +51,17 @@ BREAKPOINTS
   font-weight: eot svg ttf woff woff2;
   src: url("../fonts/montserrat-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff"), url("../fonts/montserrat-ultralight-webfont.ttf") format("truetype"), url("../fonts/montserrat-ultralight-webfont.svg#montserrat ultralight") format("svg"); }
 
-/* line 15, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 body {
   margin: 0; }
-  /* line 17, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   body * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
-/* line 21, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 .l-page {
   font-family: "montserrat regular", arial, helvetica, sans-serif;
   color: #404040; }
-  /* line 27, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h1, .l-page h2, .l-page h3, .l-page h4, .l-page h5, .l-page h6 {
     color: #00703c;
     font-weight: normal; }
-  /* line 31, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h1 {
     font-size: 3rem;
     line-height: 4.5rem;
@@ -74,7 +69,6 @@ body {
     padding: 0 0 1.5rem;
     font-family: "montserrat ultralight", arial, helvetica, sans-serif;
     margin: 0; }
-  /* line 38, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h2 {
     font-size: 2rem;
     line-height: 3rem;
@@ -83,10 +77,8 @@ body {
     padding: 2rem 0 0.9rem;
     font-family: "montserrat light", arial, helvetica, sans-serif;
     border-top: 1px dotted #00703c; }
-    /* line 45, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
     .front .l-page h2 {
       border: none; }
-  /* line 49, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h3 {
     font-size: 1.4rem;
     line-height: 3rem;
@@ -94,7 +86,6 @@ body {
     margin: 0;
     line-height: 1.68rem;
     font-family: "montserrat regular", arial, helvetica, sans-serif; }
-  /* line 56, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h4 {
     font-size: 1.1rem;
     line-height: 1.5rem;
@@ -102,7 +93,6 @@ body {
     padding: 0.55rem 0 0.33rem;
     font-family: "montserrat semibold", arial, helvetica, sans-serif;
     line-height: 1.43rem; }
-  /* line 63, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h5 {
     font-size: 0.85rem;
     line-height: 1.5rem;
@@ -112,7 +102,6 @@ body {
     line-height: 1.2325rem;
     text-transform: uppercase;
     letter-spacing: 0.085rem; }
-  /* line 72, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page h6 {
     font-size: 0.85rem;
     line-height: 1.5rem;
@@ -122,48 +111,37 @@ body {
     line-height: 1.19rem;
     text-transform: uppercase;
     letter-spacing: 0.085rem; }
-  /* line 81, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page em {
     font-style: italic; }
-  /* line 84, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page strong {
     font-family: "montserrat semibold", arial, helvetica, sans-serif; }
-  /* line 87, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page blockquote {
     padding-right: 1.4em;
     padding-left: 1.4em; }
-  /* line 92, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page p, .l-page ul, .l-page ol {
     margin: 0;
     padding: 0 0 0.9rem;
     font-family: "montserrat light", arial, helvetica, sans-serif;
     color: #404040;
     line-height: 1.6rem; }
-  /* line 99, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page ul {
     padding: 0 0 0.9rem 1.2rem; }
-  /* line 102, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page ol {
     padding: 0 0 0.9rem 1.4rem;
     margin: 0; }
-  /* line 106, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page ul li {
     list-style-image: url("../images/bullet.png");
     padding-left: 0.2rem; }
-  /* line 110, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page ol li {
     list-style: decimal; }
-  /* line 114, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page p + ul,
   .l-page p + ol {
     margin-top: -0.9rem; }
-  /* line 123, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page blockquote {
     line-height: 1rem;
     padding: 0 1.4rem;
     margin: 0; }
 
-/* line 130, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 .form-submit {
   background-color: #4080b0;
   border-radius: 3px;
@@ -175,29 +153,23 @@ body {
   padding: 7px 18px;
   text-decoration: none;
   background-clip: padding-box; }
-  /* line 354, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
   .form-submit:hover:not(:disabled) {
     background-color: #478ec3;
     cursor: pointer; }
-  /* line 365, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
   .form-submit:active:not(:disabled), .form-submit:focus:not(:disabled) {
     background-color: #3d7299;
     cursor: pointer; }
-  /* line 59, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
   .form-submit:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
-/* line 133, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 .l-page .buttons {
   margin: 0;
   padding: 0; }
-  /* line 136, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .buttons li {
     list-style: none;
     margin-bottom: 0.5rem;
     padding: 0; }
-    /* line 140, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
     .l-page .buttons li a:link {
       background-color: #4080b0;
       border-radius: 3px;
@@ -211,52 +183,39 @@ body {
       background-clip: padding-box;
       color: #ededed;
       border: none; }
-      /* line 354, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
       .l-page .buttons li a:link:hover:not(:disabled) {
         background-color: #478ec3;
         cursor: pointer; }
-      /* line 365, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
       .l-page .buttons li a:link:active:not(:disabled), .l-page .buttons li a:link:focus:not(:disabled) {
         background-color: #3d7299;
         cursor: pointer; }
-      /* line 59, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
       .l-page .buttons li a:link:disabled {
         cursor: not-allowed;
         opacity: 0.5; }
 
-/* line 148, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 .l-page .l-main a, .l-header .top-link a, .l-footer a {
-  -webkit-transition: all 0.1s ease-in;
-  -moz-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
-  /* line 150, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a:link, .l-header .top-link a:link, .l-footer a:link, .l-page .l-main a:visited, .l-header .top-link a:visited, .l-footer a:visited {
     padding-bottom: 0.0625rem;
     font-family: "montserrat regular", arial, helvetica, sans-serif;
     border-bottom: 1px dotted #dedede;
     color: #4080b0;
     text-decoration: none; }
-  /* line 158, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a:hover, .l-header .top-link a:hover, .l-footer a:hover {
     color: #005696;
     border-bottom: 1px solid #4080b0; }
-  /* line 162, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a:active, .l-header .top-link a:active, .l-footer a:active {
     color: #c84d54;
     border-bottom-color: #da888d; }
-  /* line 166, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a[href$=".pdf"], .l-header .top-link a[href$=".pdf"], .l-footer a[href$=".pdf"] {
     background: url("../images/application-pdf.png") no-repeat left center;
     padding-left: 1.5rem; }
-  /* line 170, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a[href$=".docx"], .l-header .top-link a[href$=".docx"], .l-footer a[href$=".docx"], .l-page .l-main a[href$=".doc"], .l-header .top-link a[href$=".doc"], .l-footer a[href$=".doc"] {
     background: url("../images/x-office-document.png") no-repeat left center;
     padding-left: 1.5rem; }
-  /* line 175, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
   .l-page .l-main a span.ext, .l-header .top-link a span.ext, .l-footer a span.ext {
     background: url("../images/icon-externallink.png") no-repeat center; }
 
-/* line 180, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_typography.scss */
 figure figcaption,
 figure.image figcaption {
   font-size: 0.8rem;
@@ -266,7 +225,6 @@ figure.image figcaption {
   color: #7f7f7f;
   line-height: 1.04rem; }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_media.scss */
 figure,
 figure.image {
   width: 100%;
@@ -275,23 +233,19 @@ figure.image {
   margin: 0;
   padding: 0 0 1rem;
   line-height: 1rem; }
-  /* line 11, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_media.scss */
   figure img,
   figure.image img {
     width: 100%;
     height: auto; }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_tables.scss */
 table {
   width: 100%;
   margin: 0;
   padding: 0; }
-  /* line 7, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_tables.scss */
   table th, table td {
     text-align: left;
     border-bottom: 1px solid #7f7f7f;
     padding: 0.4rem 0.8rem; }
-  /* line 12, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_tables.scss */
   table th {
     vertical-align: baseline;
     white-space: nowrap;
@@ -299,7 +253,6 @@ table {
     background: none;
     font-family: "montserrat semibold", arial, helvetica, sans-serif;
     line-height: 1.3rem; }
-  /* line 19, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_tables.scss */
   table td {
     border-color: #dedede;
     border-bottom: 1px solid #dedede;
@@ -308,38 +261,31 @@ table {
     line-height: 1.8rem;
     vertical-align: top; }
 
-/* line 2, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 .description {
   display: none;
   visibility: hidden; }
 
-/* line 8, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget.views-submit-button {
   margin-right: auto;
   margin-left: auto;
   float: none !important;
   width: 100%;
   text-align: center; }
-  /* line 13, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   .views-exposed-form .views-exposed-widget.views-submit-button input {
     margin: 0; }
 
-/* line 17, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 .views-exposed-form .views-exposed-widget:not(.views-submit-button) {
   margin-bottom: 0.75rem;
   padding: 0.5rem;
   border: 1px dotted #dedede;
   float: none; }
-  /* line 22, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   .views-exposed-form .views-exposed-widget:not(.views-submit-button) .views-operator,
   .views-exposed-form .views-exposed-widget:not(.views-submit-button) .dependent-options {
     margin-bottom: 0.75rem;
     width: 100%; }
-    /* line 26, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widget:not(.views-submit-button) .views-operator#edit-field-date-value-min-wrapper,
     .views-exposed-form .views-exposed-widget:not(.views-submit-button) .dependent-options#edit-field-date-value-min-wrapper {
       margin-right: 0.5rem; }
-  /* line 30, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   .views-exposed-form .views-exposed-widget:not(.views-submit-button).views-widget-filter-field_date_value .views-widget {
     display: -webkit-box;
     display: -moz-box;
@@ -348,8 +294,6 @@ table {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
     box-pack: justify;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -358,32 +302,27 @@ table {
     justify-content: space-between;
     -ms-flex-pack: justify; }
 
-/* line 38, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 .container-inline-date .form-item input,
 .container-inline-date .form-item,
 .views-exposed-form .container-inline-date .date-padding {
   width: 100%; }
 
-/* line 44, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 fieldset {
   background-color: transparent;
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 51, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 legend {
   font-weight: 600;
   margin-bottom: 0.75rem;
   padding: 0; }
 
-/* line 57, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 label {
   display: block;
   font-family: "montserrat regular", arial, helvetica, sans-serif;
   margin-bottom: 0.75rem; }
 
-/* line 63, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 input,
 select,
 textarea {
@@ -391,7 +330,6 @@ textarea {
   font-family: "montserrat regular", arial, helvetica, sans-serif;
   font-size: 1rem; }
 
-/* line 71, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
 select[multiple],
 select {
@@ -414,63 +352,52 @@ select {
   border: 1px solid #7f7f7f;
   transition: border-color 0.2s ease-in;
   width: 100%; }
-  /* line 85, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
   select[multiple]:hover,
   select:hover {
     border-color: #666666; }
-  /* line 89, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple]:focus,
   select:focus {
     border-color: #b5121b;
     box-shadow: none;
     outline: none; }
-  /* line 95, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
   select[multiple]:disabled,
   select:disabled {
     background-color: black;
     cursor: not-allowed; }
-    /* line 99, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
     select[multiple]:disabled:hover,
     select:disabled:hover {
       border: #7f7f7f; }
 
-/* line 105, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 textarea {
   resize: vertical; }
 
-/* line 108, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 select {
   background-image: url("../images/select-arrow-off.png");
   background-repeat: no-repeat;
   background-position: 97% center;
-  -webkit-transition: background-image 0.15s ease-in;
-  -moz-transition: background-image 0.15s ease-in;
   transition: background-image 0.15s ease-in; }
-  /* line 113, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   select:hover {
     background-image: url("../images/select-arrow.png"); }
 
-/* line 118, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 [type="search"] {
-  appearance: none; }
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
 
-/* line 122, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 [type="checkbox"],
 [type="radio"] {
   display: inline;
   margin-right: 0.75rem; }
 
-/* line 128, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
 [type="file"] {
   margin-bottom: 1.5rem;
   width: 100%; }
 
 @media (min-width: 1200px) {
-  /* line 136, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
   .views-exposed-form .views-exposed-widgets {
     display: -webkit-box;
     display: -moz-box;
@@ -479,8 +406,6 @@ select {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
     box-pack: justify;
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
@@ -492,13 +417,9 @@ select {
     -moz-box-lines: multiple;
     box-lines: multiple;
     -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
-    /* line 140, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widgets > div {
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
       box-flex: 1;
       -webkit-flex: 1 0 30%;
       -moz-flex: 1 0 30%;
@@ -506,65 +427,50 @@ select {
       flex: 1 0 30%;
       margin-right: 0.5rem;
       margin-left: 0.5rem; }
-      /* line 143, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
       .view-news .views-exposed-form .views-exposed-widgets > div {
-        -webkit-box-flex: 1;
-        -moz-box-flex: 1;
         box-flex: 1;
         -webkit-flex: 1 0 45%;
         -moz-flex: 1 0 45%;
         -ms-flex: 1 0 45%;
         flex: 1 0 45%; }
-    /* line 147, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/base/_forms.scss */
     .views-exposed-form .views-exposed-widgets .views-submit-button {
-      -webkit-box-flex: 0;
-      -moz-box-flex: 0;
       box-flex: 0;
       -webkit-flex: 0;
       -moz-flex: 0;
       -ms-flex: 0;
       flex: 0; } }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
 .l-header {
   padding-top: 0.75rem;
   margin-right: 0.5rem;
   margin-bottom: 1.5rem;
   margin-left: 0.5rem; }
-  /* line 6, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
   .l-header .top-link {
     text-align: right;
     margin-bottom: 0.75rem; }
-    /* line 9, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
     .l-header .top-link ul {
       padding: 0;
       margin: 0; }
-      /* line 12, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
       .l-header .top-link ul li {
         display: inline-block;
         color: #4080b0;
         list-style: none; }
-        /* line 16, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
         .l-header .top-link ul li.first:after {
           content: "|"; }
-    /* line 21, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
     .l-header .top-link a {
       color: #4080b0;
       text-decoration: none; }
 
-/* line 30, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
 .l-branding .logo {
   width: 18.75rem;
   margin-right: auto;
   margin-bottom: 1.5rem;
   margin-left: auto; }
-  /* line 33, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
   .l-branding .logo a {
     border-bottom: none;
     display: block;
     line-height: 0; }
 
-/* line 39, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
 .l-branding .l-utilities {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
@@ -580,30 +486,25 @@ select {
   -moz-box-lines: single;
   box-lines: single;
   -webkit-flex-wrap: nowrap;
-  -moz-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   background: #404040;
   border-bottom: 9px solid #b5121b; }
-  /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
   .l-branding .l-utilities::after {
     clear: both;
     content: "";
     display: table; }
 
-/* line 48, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
 .l-branding .site-name {
   display: none; }
 
 @media (min-width: 768px) {
-  /* line 57, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
   .l-branding .l-utilities {
     border-bottom-width: 6px;
     display: block;
     padding: 0 0.5rem; } }
 
 @media (min-width: 1200px) {
-  /* line 66, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
   .l-branding {
     display: -webkit-box;
     display: -moz-box;
@@ -612,8 +513,6 @@ select {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-    -moz-box-align: end;
     box-align: end;
     -webkit-align-items: flex-end;
     -moz-align-items: flex-end;
@@ -621,10 +520,7 @@ select {
     -o-align-items: flex-end;
     align-items: flex-end;
     -ms-flex-align: end; }
-    /* line 69, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
     .l-branding .logo {
-      -webkit-box-flex: 0;
-      -moz-box-flex: 0;
       box-flex: 0;
       -webkit-flex: 0;
       -moz-flex: 0;
@@ -632,7 +528,6 @@ select {
       flex: 0;
       margin: 0 0.6875rem 0 0;
       min-width: 9.375rem; }
-    /* line 74, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_header.scss */
     .l-branding .l-utilities {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -643,8 +538,6 @@ select {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -moz-box-align: center;
       box-align: center;
       -webkit-align-items: center;
       -moz-align-items: center;
@@ -652,8 +545,6 @@ select {
       -o-align-items: center;
       align-items: center;
       -ms-flex-align: center;
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
       box-flex: 1;
       -webkit-flex: 1;
       -moz-flex: 1;
@@ -664,10 +555,7 @@ select {
       border-bottom-width: 5px;
       height: 4.875rem; } }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 .main-menu {
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
   box-flex: 0;
   -webkit-flex: 0;
   -moz-flex: 0;
@@ -675,25 +563,19 @@ select {
   flex: 0;
   margin-right: 0.5rem;
   width: 3rem; }
-  /* line 10, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu > .menuparent > a:after {
     content: '\a0\025BE'; }
-  /* line 14, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu > .menuparent .menuparent > a:after {
     content: '\a0\025B8'; }
-  /* line 19, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu li {
     list-style: none;
     padding: 0; }
-    /* line 22, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu .menu li ul {
       padding: 0;
       box-shadow: 0px 1px 9px 1px #000000; }
-      /* line 25, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .main-menu .menu li ul li a {
         border-radius: 0;
         text-align: left; }
-    /* line 30, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu .menu li a {
       border-bottom-left-radius: 0.125rem;
       border-bottom-right-radius: 0.125rem;
@@ -706,55 +588,41 @@ select {
       text-align: center;
       text-decoration: none;
       width: 100%; }
-      /* line 40, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .main-menu .menu li a:hover {
         background-color: #4080b0; }
-  /* line 46, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu-line {
     margin: 0 0 0.4375rem;
     background: #ededed;
     border-radius: 2px;
     height: 0.1875rem;
     width: 2rem; }
-    /* line 52, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu .menu-line.last {
       margin-bottom: 0; }
-  /* line 56, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu .menu-button {
-    -webkit-transition: all 0.1s ease-in;
-    -moz-transition: all 0.1s ease-in;
     transition: all 0.1s ease-in;
     padding: 0.5rem;
     border-top-left-radius: 0.125rem;
     border-top-right-radius: 0.125rem;
     border-bottom-left-radius: 0.125rem;
     border-bottom-right-radius: 0.125rem; }
-    /* line 61, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu .menu-button:hover, .main-menu .menu-button:active {
       background-color: #7f7f7f; }
-    /* line 65, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .sidr-open .main-menu .menu-button {
       background-color: #7f7f7f; }
 
-/* line 71, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 ul {
   margin: 0;
   border: none; }
 
-/* line 75, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 li {
   list-style: none; }
-  /* line 78, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-1 > a {
     padding: 0.2rem 0 0.2rem 1rem; }
-  /* line 83, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-2 > a {
     padding: 0 0 0 2rem; }
-  /* line 88, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 li.sidr-class-sf-depth-3 > a {
     padding: 0 0 0 3rem; }
 
-/* line 93, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 a {
   margin: 0;
   font-size: 1rem;
@@ -763,40 +631,31 @@ select {
   font-family: "montserrat light", arial, helvetica, sans-serif;
   color: #ededed;
   text-decoration: none; }
-  /* line 100, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 a:hover {
     text-decoration: underline;
     background: none;
     box-shadow: none; }
 
-/* line 106, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 #sidr-0 ul li {
   display: block;
   line-height: auto;
   border: none; }
-  /* line 110, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   #sidr-0 ul li:hover {
     background: none; }
-    /* line 112, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     #sidr-0 ul li:hover a {
       box-shadow: none; }
 
-/* line 119, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
 .menu-block-wrapper {
   display: none; }
-  /* line 122, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .menu-block-wrapper > .menu {
     padding: 0; }
-    /* line 124, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .menu-block-wrapper > .menu > li {
       list-style: none;
       display: none;
       visibility: hidden; }
-      /* line 128, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .menu-block-wrapper > .menu > li.active-trail {
         display: block;
         visibility: visible; }
-      /* line 132, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .menu-block-wrapper > .menu > li > a:link {
         font-size: 1.2rem;
         line-height: 1.5rem;
@@ -806,11 +665,9 @@ select {
         border-bottom: none;
         line-height: 1.44rem;
         display: block; }
-      /* line 142, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .menu-block-wrapper > .menu > li .menu li {
         padding: 0.5rem 0;
         border-top: 1px dotted #dedede; }
-        /* line 145, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
         .menu-block-wrapper > .menu > li .menu li a:link {
           font-size: 1rem;
           line-height: 1.5rem;
@@ -819,47 +676,38 @@ select {
           display: block;
           border: none;
           line-height: 1.2rem; }
-          /* line 149, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
           .menu-block-wrapper > .menu > li .menu li a:link.active-trail {
             color: #4080b0; }
-    /* line 159, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .menu-block-wrapper > .menu .menu {
       padding: 0; }
-      /* line 161, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
       .menu-block-wrapper > .menu .menu li {
         list-style: none; }
-        /* line 163, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
         .menu-block-wrapper > .menu .menu li a:link {
           font-family: "montserrat semibold", arial, helvetica, sans-serif;
           font-size: 1.2rem;
           line-height: 1.5rem; }
 
 @media (min-width: 768px) {
-  /* line 175, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
     width: 100%;
     margin: 0; }
-    /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
     .main-menu::after {
       clear: both;
       content: "";
       display: table; }
-    /* line 179, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #sidr-wrapper-0 {
       display: none !important;
       visibility: hidden; }
-    /* line 183, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
     .main-menu #superfish-1 {
+      display: -webkit-flex !important;
+      display: -ms-flexbox !important;
       display: flex !important;
       -webkit-box-lines: single;
       -moz-box-lines: single;
       box-lines: single;
       -webkit-flex-wrap: nowrap;
-      -moz-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-      -webkit-box-align: center;
-      -moz-box-align: center;
       box-align: center;
       -webkit-align-items: center;
       -moz-align-items: center;
@@ -868,8 +716,6 @@ select {
       align-items: center;
       -ms-flex-align: center;
       padding: 0.5rem 0;
-      -webkit-box-pack: distribute;
-      -moz-box-pack: distribute;
       box-pack: distribute;
       -webkit-justify-content: space-around;
       -moz-justify-content: space-around;
@@ -880,26 +726,20 @@ select {
       margin-top: 3px; } }
 
 @media (min-width: 768px) {
-  /* line 195, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .menu-block-wrapper {
     display: block; } }
 
 @media (min-width: 1200px) {
-  /* line 200, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_menu.scss */
   .main-menu {
-    -webkit-box-flex: 4;
-    -moz-box-flex: 4;
     box-flex: 4;
     -webkit-flex: 4;
     -moz-flex: 4;
     -ms-flex: 4;
     flex: 4; } }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
 .page-search .ds-search-extra {
   margin: 0 0 1.5rem; }
 
-/* line 6, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
 .page-search h2 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -912,38 +752,29 @@ select {
   line-height: 1.6rem;
   list-style-image: url("../images/bullet.png"); }
 
-/* line 17, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
 .page-search p {
   margin-left: 0.75rem; }
 
-/* line 21, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
 .search-form {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
-  /* line 23, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search-form fieldset {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     background: #ededed; }
-    /* line 26, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
     .search-form fieldset label {
       display: inline !important; }
-  /* line 30, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search-form .form-submit {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
 
-/* line 34, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
 .search,
 .search-form {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
   box-flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   flex: 1; }
-  /* line 37, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search .container-inline,
   .search-form .container-inline {
     display: -webkit-box;
@@ -953,18 +784,14 @@ select {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex; }
-  /* line 40, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search .form-type-searchfield,
   .search-form .form-type-searchfield {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
     box-flex: 1;
     -webkit-flex: 1;
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
     margin: 0; }
-    /* line 43, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
     .search .form-type-searchfield .form-search,
     .search-form .form-type-searchfield .form-search {
       font-size: 1rem;
@@ -973,8 +800,6 @@ select {
       border-top-left-radius: 0.125rem;
       padding: 0.5rem;
       font-family: "montserrat light", arial, helvetica, sans-serif;
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
       box-flex: 1;
       -webkit-flex: 1;
       -moz-flex: 1;
@@ -985,44 +810,34 @@ select {
       color: #404040;
       vertical-align: middle;
       width: 100%; }
-      /* line 4, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/css3/_placeholder.scss */
       .search .form-type-searchfield .form-search::-webkit-input-placeholder,
       .search-form .form-type-searchfield .form-search::-webkit-input-placeholder {
         color: #7f7f7f;
         font-family: "montserrat light", arial, helvetica, sans-serif; }
-      /* line 4, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/css3/_placeholder.scss */
       .search .form-type-searchfield .form-search::-moz-placeholder,
       .search-form .form-type-searchfield .form-search::-moz-placeholder {
         color: #7f7f7f;
         font-family: "montserrat light", arial, helvetica, sans-serif; }
-      /* line 4, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/css3/_placeholder.scss */
       .search .form-type-searchfield .form-search:-moz-placeholder,
       .search-form .form-type-searchfield .form-search:-moz-placeholder {
         color: #7f7f7f;
         font-family: "montserrat light", arial, helvetica, sans-serif; }
-      /* line 4, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/css3/_placeholder.scss */
       .search .form-type-searchfield .form-search:-ms-input-placeholder,
       .search-form .form-type-searchfield .form-search:-ms-input-placeholder {
         color: #7f7f7f;
         font-family: "montserrat light", arial, helvetica, sans-serif; }
-  /* line 61, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search .form-actions,
   .search-form .form-actions {
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
     box-flex: 0;
     -webkit-flex: 0;
     -moz-flex: 0;
     -ms-flex: 0;
     flex: 0; }
-    /* line 63, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
     .search .form-actions .form-submit,
     .search-form .form-actions .form-submit {
       font-size: 1rem;
       line-height: 1.5rem;
       padding: 0.5rem;
-      -webkit-transition: all 0.1s ease-in;
-      -moz-transition: all 0.1s ease-in;
       transition: all 0.1s ease-in;
       background-color: #4080b0;
       border-bottom-right-radius: 0.125rem;
@@ -1035,58 +850,45 @@ select {
       cursor: pointer;
       text-align: center;
       text-decoration: none; }
-      /* line 76, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
       .search .form-actions .form-submit:hover,
       .search-form .form-actions .form-submit:hover {
         color: #000000;
         background-color: #7faaca; }
-      /* line 80, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
       .search .form-actions .form-submit:active,
       .search-form .form-actions .form-submit:active {
         color: #ededed;
         background-color: #da888d; }
-  /* line 86, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search label,
   .search-form label {
     display: none; }
-  /* line 89, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search h2,
   .search-form h2 {
     display: none; }
 
 @media (min-width: 768px) {
-  /* line 97, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search {
     width: 100%;
     display: block;
     margin: 0 0 0.5rem; } }
 
 @media (min-width: 1200px) {
-  /* line 105, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_search.scss */
   .search {
     margin: 0; } }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
 .l-footer {
   background: #dedede;
   padding: 0.5rem;
   text-align: center; }
-  /* line 11, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
   .l-footer .copyright p {
     margin-top: 0rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
     margin-bottom: 0rem; }
-  /* line 15, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
   .l-footer .footer-text {
     text-align: center; }
-  /* line 18, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
   .l-footer .footer-menu {
     margin-bottom: 0.75rem; }
-    /* line 20, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
     .l-footer .footer-menu .menu {
-      -webkit-box-align: stretch;
-      -moz-box-align: stretch;
       box-align: stretch;
       -webkit-align-items: stretch;
       -moz-align-items: stretch;
@@ -1101,18 +903,12 @@ select {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
-      -moz-box-orient: horizontal;
       box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -moz-box-direction: normal;
       box-direction: normal;
       -webkit-flex-direction: row;
       -moz-flex-direction: row;
       flex-direction: row;
       -ms-flex-direction: row;
-      -webkit-box-pack: justify;
-      -moz-box-pack: justify;
       box-pack: justify;
       -webkit-justify-content: space-between;
       -moz-justify-content: space-between;
@@ -1124,18 +920,13 @@ select {
       -moz-box-lines: multiple;
       box-lines: multiple;
       -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-    /* line 27, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
     .l-footer .footer-menu ul, .l-footer .footer-menu li {
       list-style: none;
       padding: 0;
       margin: 0; }
-    /* line 32, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_footer.scss */
     .l-footer .footer-menu li {
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
       box-flex: 1;
       -webkit-flex: 1;
       -moz-flex: 1;
@@ -1144,49 +935,41 @@ select {
       text-align: center;
       margin: 0.2rem 0.5rem; }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_main.scss */
 .l-main {
   margin-right: 0.5rem;
   margin-bottom: 1.5rem;
   margin-left: 0.5rem; }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_page.scss */
 .l-page {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 12, /Applications/CodeKit.app/Contents/Resources/engines/susy/sass/susy/output/support/_clearfix.scss */
   .l-page:after {
     content: " ";
     display: block;
     clear: both; }
 
 @media (min-width: 768px) {
-  /* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
   .not-front .l-content::after {
     clear: both;
     content: "";
     display: table; }
-  /* line 12, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_page.scss */
   .not-front .left-column {
-    width: 23.7288135593%;
+    width: 23.72881%;
     float: left;
-    margin-right: 1.6949152542%; }
-  /* line 15, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_page.scss */
+    margin-right: 1.69492%; }
   .not-front .right-column {
-    width: 74.5762711864%;
+    width: 74.57627%;
     float: right;
     margin-right: 0;
     padding-top: 1.7rem;
     padding-bottom: 1.7rem;
     padding-left: 1.7rem; } }
 
-/* line 4, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
 .front .right-column {
   /* h2 {
 			border-top: none;
 		} */ }
-  /* line 13, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .right-column .pane-links-links-home-page .view-content ul {
     padding: 0;
     margin: 0;
@@ -1201,21 +984,17 @@ select {
     -moz-box-lines: multiple;
     box-lines: multiple;
     -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-align-content: stretch;
-    -moz-align-content: stretch;
-    align-content: stretch;
+            align-content: stretch;
     -ms-flex-line-pack: stretch; }
-    /* line 19, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
     .front .right-column .pane-links-links-home-page .view-content ul li {
       margin: 0 0.5rem 0.5rem 0;
       padding: 0;
       list-style: none;
       text-indent: 0;
       width: 100%; }
-  /* line 27, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .right-column .pane-links-links-home-page .view-content a {
     background-color: #4080b0;
     border-radius: 3px;
@@ -1229,46 +1008,37 @@ select {
     background-clip: padding-box;
     width: 100%;
     text-align: center; }
-    /* line 354, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
     .front .right-column .pane-links-links-home-page .view-content a:hover:not(:disabled) {
       background-color: #478ec3;
       cursor: pointer; }
-    /* line 365, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
     .front .right-column .pane-links-links-home-page .view-content a:active:not(:disabled), .front .right-column .pane-links-links-home-page .view-content a:focus:not(:disabled) {
       background-color: #3d7299;
       cursor: pointer; }
-    /* line 59, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/_bourbon-deprecated-upcoming.scss */
     .front .right-column .pane-links-links-home-page .view-content a:disabled {
       cursor: not-allowed;
       opacity: 0.5; }
 
 @media (min-width: 768px) {
-  /* line 39, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .left-column {
-    width: 57.6271186441%;
+    width: 57.62712%;
     float: left;
-    margin-right: 1.6949152542%; }
-  /* line 42, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
+    margin-right: 1.69492%; }
   .front .right-column {
-    width: 40.6779661017%;
+    width: 40.67797%;
     float: right;
     margin-right: 0; } }
 
 @media (min-width: 1200px) {
-  /* line 53, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .right-column .pane-links-links-home-page .view-content ul li {
     width: auto; }
-  /* line 57, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_home.scss */
   .front .right-column .pane-links-links-home-page .view-content a {
     width: auto; } }
 
-/* line 20, /Applications/CodeKit.app/Contents/Resources/engines/bourbon/addons/_clearfix.scss */
 .l-content::after {
   clear: both;
   content: "";
   display: table; }
 
-/* line 3, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_blue-box.scss */
 .front .right-column .pane-news-news-home-page, .page-publications .publication-item, .left-column div[class*="pane-newsletters-newsletters-"] {
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
@@ -1277,47 +1047,46 @@ select {
   margin: 0.7rem 0 1.5rem;
   padding: 1.5rem 1.5rem 1rem;
   background-color: #edf3f8; }
-  /* line 9, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_blue-box.scss */
   .front .right-column .pane-news-news-home-page h2, .page-publications .publication-item h2, .left-column div[class*="pane-newsletters-newsletters-"] h2 {
     border: none;
     margin: 0;
     padding-top: 0.4rem; }
 
-/* line 4, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
 .page-publications .publication-item {
   background-color: #ededed; }
 
-/* line 8, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
 .page-publications h2 + img {
   display: none; }
 
-/* line 11, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
 .page-publications span.file-icon {
   font-size: 0.8rem;
   line-height: 1.5rem;
   line-height: 1.6rem; }
-  /* line 14, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications span.file-icon.txt {
     background: url("../images/text-plain.png") no-repeat left center;
     padding: 0.125rem 0 0.125rem 1rem; }
-  /* line 18, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications span.file-icon.doc, .page-publications span.file-icon.docx {
     background: url("../images/x-office-document.png") no-repeat left center;
     padding: 0.125rem 0 0.125rem 1rem; }
-  /* line 23, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications span.file-icon.pdf {
     background: url("../images/application-pdf.png") no-repeat left center;
     padding: 0.125rem 0 0.125rem 1rem; }
 
+.l-page .view-publications .buttons li a:link {
+  background-color: #dee9f1;
+  color: #005696; }
+
+.l-page .view-publications a[href$=".pdf"] {
+  background: none;
+  padding-left: 0px; }
+
 @media (min-width: 768px) {
-  /* line 34, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications h2 + img {
     display: block;
     float: right;
     margin: 0 0 1rem 1rem; } }
 
 @media (min-width: 1200px) {
-  /* line 43, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications .view-content {
     display: -webkit-box;
     display: -moz-box;
@@ -1330,11 +1099,8 @@ select {
     -moz-box-lines: multiple;
     box-lines: multiple;
     -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: distribute;
-    -moz-box-pack: distribute;
     box-pack: distribute;
     -webkit-justify-content: space-around;
     -moz-justify-content: space-around;
@@ -1342,13 +1108,12 @@ select {
     -o-justify-content: space-around;
     justify-content: space-around;
     -ms-flex-pack: distribute; }
-  /* line 48, /Users/jesseboyd/Sites/devdesktop/nathers/docroot/sites/all/themes/custom/nathers_2016/sass/components/_publications.scss */
   .page-publications .publication-item {
-    -webkit-box-flex: 0;
-    -moz-box-flex: 0;
     box-flex: 0;
     -webkit-flex: 0 45%;
     -moz-flex: 0 45%;
     -ms-flex: 0 45%;
     flex: 0 45%;
     margin: 0.5rem; } }
+
+/*# sourceMappingURL=nathers-2016.styles.css.map */

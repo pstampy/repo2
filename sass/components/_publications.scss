@@ -3,7 +3,7 @@
 .page-publications {
 	.publication-item {
 		@extend %blue-box;
-		background-color: color(grey, sixteenth);
+		background-color: color(grey, sixteenth); 
 	}
 	h2 + img {
 		display: none;
@@ -26,6 +26,17 @@
 		}
 	}
 }
+
+
+.l-page .view-publications .buttons li a:link {
+
+	background-color: #dee9f1;
+	color:#005696;
+}
+
+.l-page .view-publications a[href$=".pdf"] {
+     background: none;
+    padding-left: 0px;}
 
 // Responsiveness
 
