@@ -38,17 +38,18 @@
 		@include display(flex);
 	}
 	.form-type-searchfield {
-		@include flex(1);
+		@include flex(10 0);
 		@include margin(0);
 		.form-search {
 			@include adjust-font-size-to(1rem);
 			@include border-left-radius(rem(2px));
+			@include flex(1);
 			@include padding(0.5rem);
 			@include weight(light);
-			@include flex(1);
 			background: color(grey, sixteenth);
 			border: none;
 			color: color(grey, three-quarter);
+			height: rem(40);
 			vertical-align: middle;
 			width: 100%;
 			@include placeholder {
@@ -59,7 +60,7 @@
 	}
 	
 	.form-actions {
-		@include flex(0);
+		@include flex(1 0);
 		.form-submit {
 			@include adjust-font-size-to(1rem);
 			@include padding (0.5rem);
@@ -94,15 +95,24 @@
 // Responsiveness
 
 @include breakpoint(tablet) {
-	.search {
+	.search,
+	.search-form {
 		width: 100%;
 		@include display(block);
 		@include margin(0 0 0.5rem 0);
+		.form-type-searchfield {
+			@include flex(21 0);
+		}
 	}
 }
 
 @include breakpoint(desktop) {
-	.search {
+	.search,
+	.search-form {
 		@include margin(0);
+		.form-type-searchfield {
+			@include flex(4 0);
+		}
 	}
 }
+
