@@ -70,6 +70,7 @@
 			@include flex(0);
 			@include margin(0 rem(11px) 0 0);
 			min-width: rem(150px);
+			max-width: 100%;
 		}
 		.l-utilities {
 			@include border-top-radius(0);
