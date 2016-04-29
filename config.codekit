@@ -173,7 +173,7 @@
 		"outputAbbreviatedPath": "\/libraries\/sass-vertical-rhythm\/css\/_sass-vertical-rhythm.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -189,7 +189,7 @@
 		"outputAbbreviatedPath": "\/libraries\/sass-vertical-rhythm\/sass\/css\/_keywords.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -205,7 +205,7 @@
 		"outputAbbreviatedPath": "\/libraries\/sass-vertical-rhythm\/sass\/css\/_units.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -263,7 +263,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_mixins.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -279,7 +279,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_forms.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -295,7 +295,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_media.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -311,7 +311,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_tables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -327,7 +327,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_typography.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -343,7 +343,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_blue-box.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -359,7 +359,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_content.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -375,7 +375,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -391,7 +391,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_header.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -407,7 +407,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_home.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -423,7 +423,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -439,7 +439,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_menu.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -455,7 +455,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_newsletters.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -471,7 +471,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_page.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -487,7 +487,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_publications.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -503,7 +503,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_search.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -519,7 +519,7 @@
 		"outputAbbreviatedPath": "\/css\/nathers-2016.reset.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -535,7 +535,7 @@
 		"outputAbbreviatedPath": "\/css\/nathers-2016.styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -551,7 +551,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_colors.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -567,7 +567,7 @@
 		"outputAbbreviatedPath": "\/sass\/css\/_layout.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 2,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -606,15 +606,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/templates\/system\/html--user--login.tpl.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/templates\/system\/html.tpl.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/templates\/system\/html.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1261,7 +1252,7 @@
 	"sassCreateSourceMap": 0,
 	"sassDebugStyle": 0,
 	"sassDecimalPrecision": 10,
-	"sassOutputStyle": 3,
+	"sassOutputStyle": 2,
 	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
