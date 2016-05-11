@@ -10,9 +10,16 @@ figure.image {
 	line-height: rem(16px);
 	img {
 		width: 100%;
+		max-width: 100%;
 		height: auto;
 	}
 	figcaption {
 		@extend %base-caption;
 	}
+}
+
+.l-content img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
 }

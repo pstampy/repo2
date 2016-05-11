@@ -152,7 +152,7 @@ body {
 		@include padding(null null rem(1px) null);
 		@include weight(regular);
 		border-bottom: 1px dotted color(grey, eighth);
-		color: color(blue, three-quarter);
+		color: color(blue, full);
 		text-decoration: none;
 	}
 	&:hover {

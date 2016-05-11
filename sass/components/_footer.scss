@@ -3,6 +3,7 @@
 .l-footer {
 	a {
 		@extend %base-link;
+		color: color(blue, alt-link);
 	}
 	background: color(grey, eighth);
 	padding: 0.5rem;
