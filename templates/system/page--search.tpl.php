@@ -75,7 +75,7 @@
     <div class="top-link">
       <ul>
         <li class="first">
-          <a href="http://www.industry.gov.au" title="industry.gov.au">industry.gov.au</a>
+          <a href="https://www.environment.gov.au" title="environment.gov.au">environment.gov.au</a>
         </li>
         <li>
           <a href="http://www.yourhome.gov.au" title="YourHome">yourhome.gov.au</a>
@@ -121,7 +121,7 @@
       <?php print render($footer_block['content']); ?>
     </div>
     <div class="footer-text">
-      <p>Administered by the <a href="http://www.industry.gov.au" title="www.industry.gov.au">Department of Industry, Innovation and Science</a> on behalf of the states and territories.</p>
+      <p>Administered by the <a href="https://www.environment.gov.au" title="environment.gov.au">Department of Environment and Energy</a> on behalf of the states and territories.</p>
     </div>
     <div class="copyright">
       <?php $copyright_block = module_invoke('copyright_block', 'block_view', 'copyright_block'); ?>
