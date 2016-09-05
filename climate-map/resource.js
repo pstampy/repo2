@@ -194,14 +194,7 @@ var Main = {
 
                             if(data.rows[i][0] == zoneIds[x]) {
                                 // Check if the PDF exists
-                                var moreInfo = 'N/A';
-                                $.get('/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf')
-                                    .done(function() {
-                                        moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
-                                    })
-                                    .fail(function() {
-                                        moreInfo = 'N/A';
-                                    });
+                                var moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
                                 var colorSwatch = '<div class="colorSwatch" style="' + 
                                 'background:' + data.rows[i][2] + ';' + 
                                 'border: solid 1px' + data.rows[i][3] + ';' + 
@@ -382,7 +375,7 @@ var Main = {
             name: 'Climate Zone Boundaries',
             selected: true,
             showInMenu: true,
-            icon: null,
+            icon: 'climate_zones.png',
             settings: {
                 query: {
                     select: 'col2\x3e\x3e0',
@@ -400,7 +393,7 @@ var Main = {
             name: 'Post Code Boundaries',
             selected: true,
             showInMenu: true,
-            icon: null,
+            icon: 'post_codes.png',
             settings: {
                 query: {
                     select: 'geometry',
@@ -420,7 +413,7 @@ var Main = {
             description: 'Only available for Western Australia',
             selected: false,
             showInMenu: true,
-            icon: null,
+            icon: 'suburbs.png',
             settings: {
                 query: {
                     select: 'geometry',

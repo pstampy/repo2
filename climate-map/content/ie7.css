@@ -1,0 +1,71 @@
+﻿#mdsLogo 
+{
+    border: none;    
+}
+#poweredby 
+{
+    position: relative;    
+    top: -2px;
+}
+#mdslink 
+{
+    position: relative;    
+    top: -2px;
+}
+.funt 
+{
+    float: left;
+    margin-left: 2px;
+}
+.filtergroup ul li input 
+{
+    top: -32px;
+}
+.filtergroup ul li label img 
+{
+    top: 2px;    
+    width: 39px;
+}
+#filtersCount 
+{
+    bottom: -15px;    
+}
+#map 
+{
+    margin-top: 50px;    
+}
+#addDestination 
+{
+    margin-left: 40px;
+    float: left;    
+}
+#controlSeperator 
+{
+    margin-left: 2px; 
+    float: left;  
+}
+#hideShowDirOpt 
+{
+    margin-left: 2px; 
+    float: left;  
+}
+#searchInp-clear 
+{
+    margin-top: -2px;   
+}
+#directionsFields .directionsitem.error 
+{
+    height: 115px;
+}
+#directionsFields .directionsitem.error .clear-input 
+{
+    margin-top: -35px;
+}
+#print img, #reset img, #remove img  
+{
+    top: 0;    
+}
+#header #search #searchBtn img
+{
+    top: 0;    
+}
