@@ -194,7 +194,7 @@ var Main = {
 
                             if(data.rows[i][0] == zoneIds[x]) {
                                 // Check if the PDF exists
-                                var moreInfo = '';
+                                var moreInfo = 'N/A';
                                 $.get('/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf')
                                     .done(function() {
                                         console.log('Success');
