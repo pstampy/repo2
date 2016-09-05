@@ -193,6 +193,15 @@ var Main = {
                         for(var i = 0; i < data.rows.length; i++) {                            
 
                             if(data.rows[i][0] == zoneIds[x]) {
+                                // Check if the PDF exists
+                                var moreInfo = '';
+                                $.get('/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf')
+                                    .done(function() {
+                                        moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
+                                    })
+                                    .fail(function() {
+                                        moreInfo = 'N/A';
+                                    });
                                 var colorSwatch = '<div class="colorSwatch" style="' + 
                                 'background:' + data.rows[i][2] + ';' + 
                                 'border: solid 1px' + data.rows[i][3] + ';' + 
@@ -209,11 +218,6 @@ var Main = {
                                 if(hasMultipleZones && hasMultipleZones == true) {
                                     type = 'Option';
                                 }                                
-
-                                var moreInfo = '';
-                                //if(type == 'Principal') {
-                                    moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
-                                //}
 
                                 row = '<tr>' +
                                     '<td class="type">' + type + '</td>' + 
