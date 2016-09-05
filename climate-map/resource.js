@@ -603,11 +603,15 @@ var Main = {
                 var checked = _SELF.dataLayers[i].selected == true ? 'checked ' : '';                        
                 var dataLayerHTMLItem = ''; 
                 var description = '';
+                var iconHTML = '';
                 if(_SELF.dataLayers[i].hasOwnProperty('description')) {
                     description = '<br /><span class="layer-description">' + _SELF.dataLayers[i].description + '</span>';
-                }               
-                
-                    dataLayerHTMLItem = $('<li></li>').append('<label for="layerToggle' + i + '"><img src="content/images/filtericons/' + _SELF.dataLayers[i].icon + '" alt="" /><span>' + _SELF.dataLayers[i].name + '</span>' + description + '</label><input id="layerToggle' + i + '" type="checkbox" ' + checked + '/>');                
+                }
+                if (_SELF.dataLayers[i].hasOwnProperty('icon') && _SELF.dataLayers[i].icon !== null) {
+                    iconHTML = '<img src="content/images/filtericons/' + _SELF.dataLayers[i].icon + '" alt="" />';
+                }            
+            
+                dataLayerHTMLItem = $('<li></li>').append('<label for="layerToggle' + i + '">' + iconHTML + '<span>' + _SELF.dataLayers[i].name + '</span>' + description + '</label><input id="layerToggle' + i + '" type="checkbox" ' + checked + '/>');                
                 
                 dataLayerHTMLItem.find('input').click(function(event) {                    
                     if($(this).is('input') == true) {                    
