@@ -1,0 +1,1711 @@
+﻿body
+{
+    -webkit-text-size-adjust: none !important;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #FFFFFF;    
+    background-origin: padding-box;
+    background-position: center center;
+    background-repeat: repeat;
+    color: #696969;
+    font-family: Arial;
+    font-size: 0.85em;
+    margin: 0;
+    padding: 0;    
+}
+
+a:link
+{
+    color: #034af3;
+    text-decoration: underline;
+}
+
+a:visited
+{
+    color: #505abc;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #12eb87;
+}
+
+p, ul
+{
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+header, footer, nav, section
+{
+    display: block;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #032B51;
+}
+
+h1
+{
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2
+{
+    padding: 0 0 10px 0;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+}
+.container
+{
+}
+
+header, #header
+{
+}
+
+header h1, #header h1
+{
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0;
+    color: #fff;
+    border: none;
+    line-height: 2em;
+    font-size: 32px !important;
+    text-shadow: 1px 1px 2px #111;
+}
+
+#main
+{
+    margin-top: 0;
+    height: 100%;
+}
+
+footer, #footer
+{
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    line-height: normal;
+    margin: 0;
+    font-size: .9em;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+ul#menu
+{
+    border-bottom: 1px #5C87B2 solid;
+    padding: 0 0 2px;
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+ul#menu li
+{
+    display: inline;
+    list-style: none;
+}
+
+ul#menu li#greeting
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    color: #fff;
+}
+
+ul#menu li a
+{
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.8em;
+    background-color: #e8eef4;
+    color: #034af3;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+
+ul#menu li a:active
+{
+    background-color: #a6e2a6;
+    text-decoration: none;
+}
+
+ul#menu li.selected a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    border: 1px solid #ddd;
+    padding: 0 1.4em 1.4em 1.4em;
+    margin: 0 0 1.5em 0;
+}
+
+legend
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+textarea
+{
+    min-height: 75px;
+}
+
+input[type="text"], input[type="password"]
+{
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+    width: 100%;
+}
+
+select
+{
+    border: 1px solid #ccc;
+    padding: 2px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+input[type="submit"]
+{
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+
+table
+{
+    border: solid 1px #FFFFFF;
+    border-collapse: collapse;
+}
+
+table td
+{
+    padding: 5px;
+    border: solid 1px #FFFFFF;
+}
+
+table th
+{
+    padding: 6px 5px;
+    text-align: left;
+    background-color: #e8eef4;
+    border: solid 1px #FFFFFF;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+    clear: both;
+}
+
+.error
+{
+    color: Red;
+}
+
+nav, #menucontainer
+{
+    margin-top: 40px;
+}
+
+div#title
+{
+    display: block;
+    float: left;
+    text-align: left;
+}
+#title a
+{
+    text-decoration: none;
+}
+
+#logindisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    margin: 10px;
+    color: White;
+}
+
+#logindisplay a:link
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:visited
+{
+    color: white;
+    text-decoration: underline;
+}
+
+#logindisplay a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    color: #ff0000;
+}
+.validation-summary-errors ul
+{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #FF0000;
+    background: #FFD1D1;
+}
+.validation-summary-errors ul li
+{
+    list-style: none;
+    padding: 2px;
+    color: #FF0000;
+    text-align: center;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label, .editor-label
+{
+    margin: 1em 0 0 0;
+}
+
+.display-field, .editor-field
+{
+    margin: 0.5em 0 0 0;
+}
+
+.text-box
+{
+    width: 30em;
+}
+
+.text-box.multi-line
+{
+    height: 6.5em;
+}
+
+.tri-state
+{
+    width: 6em;
+}
+
+/*App style
+----------------------------------------------------------*/
+#logo 
+{
+    background: url(images/title-bg.png) repeat-x scroll 0 0 #0D5191;
+    color: #FFFFFF;
+    height: 80px;    
+    border-bottom: 3px solid #B6121B;
+    box-shadow: 0 1px 2px #000000;
+}
+#logo #logoandtitle 
+{
+    cursor: pointer;    
+}
+#logo #topfunctions 
+{
+    position: relative;
+    top: -23px;        
+    right: 5px;
+}
+#logo #mainlogo
+{
+    border: medium none;
+    float: left;
+    height: 82px;
+    left: 0;
+    margin-left: 8px;
+    position: relative;
+    top: 0;
+    z-index: 999;
+}
+#logo .title
+{
+    left: 8px;
+    position: relative;
+    top: 18px;
+    width: 520px;
+}
+
+#logo h2 
+{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 2px #032B51;
+}
+#logo h3 
+{
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;  
+    text-shadow: 1px 2px #032B51;
+    font-weight: normal; 
+}
+
+
+#login
+{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+#login #logo
+{
+    margin-left: 80px;
+    width: 130px;
+}
+#login h3
+{
+    border-bottom: 1px solid #D6D6D6;
+    border-top: 1px solid #D6D6D6;
+    color: #032B51;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    border-top: 5px solid #B6121B;
+}
+#header
+{
+    background: none repeat scroll 0 0 #DBDBDB;
+    border-bottom: 1px solid #808080;
+    border-top: 3px solid #B6121B;
+    box-shadow: 0 1px 2px #808080;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 888;
+}
+#header table
+{
+    border: none;
+    width: 100%;
+    height: 50px;
+}
+#header table tr
+{
+    height: 50px;
+}
+#header table tr td
+{
+    height: 50px;
+}
+#header .container
+{
+    border: medium none;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    top: -63px;
+    width: 120px;
+}
+#header #back
+{
+    width: 33%;
+}
+#header #title
+{
+    width: 33%;
+}
+#header #title #logoCont
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 199px;
+}
+#header #title #logoCont #logoImg
+{
+    display: inline;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 3px;
+    width: 45px;
+}
+#header #title #logoCont h3
+{
+    color: #FFFFFF;
+    line-height: 53px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 1px 2px #000000;
+    top: -1px;
+}
+#header #title h3
+{
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+#logo #search
+{
+    left: 428px;
+    position: fixed;
+    top: 21px;    
+}
+#logo #search #searchInp
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #0D5191;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 1px 2px #CCCCCC;
+    float: right;
+    font-size: 13px;
+    height: 16px;
+    padding: 7px 10px;
+    position: relative;
+    top: -1px;
+    width: 240px;
+}
+.clear-input
+{
+    background: url("images/clear-input.png") no-repeat scroll center center transparent;
+    display: none;
+    float: right;
+    height: 30px;
+    position: absolute;
+    right: 63px;
+    width: 22px;
+    cursor: pointer;
+}
+.clear-input:hover
+{
+    background: url("images/clear-input-sel.png") no-repeat scroll center center transparent;
+}
+.clear-input-dir
+{
+    right: 18px;
+}
+#logo #search #searchBtn
+{
+    box-shadow: 0 1px 2px #CCCCCC;
+    background: url("images/search-btn-grad.png") repeat-x scroll 0 0 transparent;
+    border-color: #0D5191;
+    border-radius: 0 5px 5px 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    text-shadow: 0 1px 2px #000000;
+    font-family: MS Shell Dlg, Arial;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    padding: 0 10px;
+    position: relative;
+    top: -1px;
+    text-align: center;
+    width: 30px;
+}
+#logo #search #searchBtn img 
+{
+    height: 20px;
+    position: relative;
+    top: 5px;    
+}
+#main #map
+{
+    background: url("images/whitey.png") repeat scroll center center transparent;
+    height: 100%;
+    width: 100%;
+   
+}
+#main #usercontrols
+{
+    bottom: 18px;
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-right: 5px;
+    position: fixed;
+    right: 5px;
+    text-transform: lowercase;
+    z-index: 999;
+}
+#main #usercontrols a
+{
+    color: #fff;
+    text-decoration: none;
+}
+#main #usercontrols a:hover
+{
+    text-decoration: underline;
+}
+#main #functions
+{
+    bottom: 17px;
+    display: block;
+    position: fixed;
+    width: 268px;
+    z-index: 999;
+}
+#main #functions .funt
+{
+    background: url("images/bottom-button.png") repeat-x scroll center center #4B4B4B;
+    border-color: #032B51;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid solid none;
+    text-shadow: 0 1px 2px #000;
+    border-width: 1px 1px medium;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px;
+    text-align: center;
+    width: 45px;    
+    box-shadow: 0 1px 2px #CCCCCC;
+}
+#main #functions #elevationTab.funt 
+{
+    /*width: 105px;*/
+}
+
+#main #functions #elevationTab.funt span 
+{
+    left: 1px;
+    position: relative;
+    top: -3px;
+}
+#main #functions .funt img 
+{
+    height: 23px;
+    position: relative;
+    top: 1px;    
+}
+#main #functions .selected
+{
+    background: url("images/bottom-button-sel.png") repeat-x scroll center center #4B4B4B;
+}
+#main #functions #tabs
+{
+    left: 5px;
+    position: relative;
+    top: 8px;
+}
+
+#main #functions #righttabs 
+{
+    bottom: 7px;
+    position: fixed;
+    right: 5px; 
+}
+#main #functions #righttabs .funt 
+{
+    height: 29px;
+    width: 137px;    
+}
+#main #functions #righttabs .funt img 
+{
+    height: 22px;
+    position: relative;
+    top: 2px;
+}
+#main #functions #righttabs .funt span 
+{
+    margin-left: 3px;
+    position: relative;
+    top: -3px;    
+}
+#main #functions #functionFields
+{
+    background: url("images/title-bg.png") repeat-x scroll 0 0 #0D5191;
+    border-radius: 0 5px 0 0;
+    border-style: solid solid none none;
+    border-width: 1px 1px medium medium;
+    box-shadow: 1px 0 1px #000000;
+    display: none;
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane {
+    background: url("images/title-bg.png") repeat-x scroll 0 0 #0D5191;
+    border-radius: 5px 0 0 0;
+    bottom: 50px;
+    box-shadow: 0 0 6px #000000;
+    position: fixed;
+    right: 0;
+    width: 335px;
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner 
+{
+    background: #FFFFFF;
+    overflow-y: auto;        
+    overflow-x: hiden;        
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone 
+{
+    display: none;    
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone .colorSwatch,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones .colorSwatch
+{
+    height: 20px;
+    width: 100%;
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table
+{
+    width: 100%;    
+    border-top: 3px solid #B6121B;
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr
+{
+    background: #DBDBDB;
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr td, 
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones tr td
+{
+    text-align: center;    
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr th,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr th 
+{
+    text-align: center;
+    background: #C1C1C1;
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr th.key,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr td.key,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr th.key,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr td.key  
+{
+    width: 50px;    
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr th.region,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr td.region 
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr th.region,  
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr td.region 
+{
+    width: 108px;    
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr th.location,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr td.location,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr td.location,
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr td.location
+{
+    width: 108px;    
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones 
+{
+        
+}
+
+#main #functions #functionFields .functionFieldsPane h3 
+{
+    margin: 6px 0;
+    text-align: center;    
+    text-shadow: 0 1px 2px #000;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+#main #functions #functionFields .functionFieldsPane .blurb 
+{
+    color: #FFFFFF;
+    font-size: 11px;
+    font-style: italic;
+    line-height: 3px;
+    padding-bottom: 22px;
+    text-align: center;
+    text-shadow: 0 1px 2px #000000;
+}
+#main #functions #functionFields .functionFieldsPane ul 
+{
+    margin: 0;
+    padding: 0;        
+}
+#main #functions #functionFields .functionFieldsPane ul li 
+{
+    border-color: #FFFFFF;
+    border-image: none;
+    border-style: solid none none;
+    border-width: 1px 1px medium;
+    list-style: none outside none;
+    min-height: 20px;
+    padding: 15px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #DBDBDB;
+}
+#main #functions #functionFields .functionFieldsPane ul li:first-child 
+{
+    border-top: 3px solid #B6121B;
+}
+#main #functions #functionFields .functionFieldsPane ul li label 
+{
+    display: inline-block;    
+}
+#main #functions #functionFields .functionFieldsPane ul li label span 
+{
+    position: relative;
+    top: -5px;    
+}
+#main #functions #functionFields .functionFieldsPane ul li label span.layer-description 
+{
+    font-size: 10px;
+    font-style: italic;
+    margin-left: 40px;        
+} 
+
+#main #functions #functionFields .functionFieldsPane ul li label img 
+{
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;    
+}
+#main #functions #functionFields .functionFieldsPane ul li input 
+{    
+    float: right;
+    position: relative;
+    top: 10px;
+}
+
+#main #functions #functionFields #filtersContent
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+}
+#filtersCount
+{
+    bottom: 20px;
+    left: 98px;
+    position: absolute;
+    z-index: 999;
+    background: url(images/selected-filtercount-bg.png) repeat-x scroll 0 0 #032B51;
+    border: 2px solid #E1E2DE;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 1px 2px #000000;
+    color: #FFFFFF;
+    padding: 2px 6px;
+    text-shadow: 0 1px 2px #000000;
+    display: none;
+}
+
+#main #functions #functionFields #directionsContent
+{
+    padding-bottom: 10px;
+}
+#footer
+{
+    background: url("images/bottom-menu.png") repeat-x scroll 0 0 transparent;
+    bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 888;
+}
+
+.button
+{
+    background: url(images/button-grad.png) repeat-x scroll 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: block;
+    font-size: 17px;
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 0 1px 2px #000000;
+    width: 100%;
+    cursor: pointer;
+}
+
+#industrylink
+{
+    color: #fff;
+    font-size:20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    text-decoration: none;
+}
+
+#industrylink:hover
+{
+    text-decoration: underline;
+}
+
+
+input.blur
+{
+    color: #CCCCCC;
+}
+/*Directions
+--------------------------------------*/
+#directionsFields
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1208px;
+}
+#directionsFields .directionsitem
+{
+    clear: both;
+    display: block;
+    height: 39px;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#directionsFields .directionsitem input
+{
+    background: #FFFFFF;
+    border-radius: 0 5px 5px 0;
+    border-color: #0C5D1C;
+    border-left: none;
+    float: left;
+    font-size: 13px;
+    height: 21px;
+    left: -3px;
+    margin-left: 1px;
+    padding: 5px 10px;
+    position: relative;
+    top: 1px;
+    width: 75%;
+}
+#directionsFields .directionsitem input.blur
+{
+    color: #CCCCCC;
+}
+#directionsFields .directionsitem .directionsLabel
+{
+    float: left;
+    margin-left: 1px; 
+}
+.directionsItemIcn
+{
+    float: left;
+    position: relative;
+    top: 0;
+    height: 35px;
+}
+#directionsFields .directionsitem .removeDirectionField
+{
+    background: url("images/clear.png") no-repeat scroll 0 0;
+    float: left;
+    height: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 15px;
+    cursor: pointer;
+    display: none;
+}
+#directionsControls
+{
+    text-align: center;
+}
+#directionsControls #addDestination, #directionsControls #hideShowDirOpt
+{
+    color: #032B51;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 90%;
+}
+#directionsControls #directionsOptions
+{
+    background: none repeat scroll 0 0 #424242;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    height: 50px;
+    margin: 5px auto;
+    padding: 10px;
+    width: 180px;
+}
+#directionsControls #directionsOptions div
+{
+    display: block;
+    height: 27px;
+    margin-left: 25px;
+}
+#directionsControls #directionsOptions div input
+{
+    float: left;
+}
+#directionsControls #directionsOptions div label
+{
+    float: left;
+    left: 2px;
+    position: relative;
+    top: 2px;
+}
+#tripBlurb p
+{
+    padding: 5px 0;
+    margin: 10px 5px 10px;
+    text-align: center;
+    font-size: 90%;
+}
+.hidden
+{
+    display: none;
+}
+#searchToolbar.directions
+{
+    margin: 5px 5px 0;
+}
+#searchBtnDir
+{
+    background: url("images/button-grad.png") repeat-x scroll center center transparent;
+    border: 1px solid #000000;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px 13px;
+    text-decoration: none;
+    text-shadow: 0 1px 2px #000000;
+    width: 100%;
+}
+.errorMessage
+{
+    padding: 5px;
+    margin: 5px;
+    background: #FFA3A3;
+    color: #000000;
+    border: solid 1px #B70201;
+}
+.directionsError
+{
+    border-radius: 5px 5px 5px 5px;
+    float: left;
+    font-size: 12px;
+    margin: 5px 5px 5px 33px;
+    padding: 10px;
+    width: 100%;
+}
+
+.multiResultSelect
+{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*Filters
+----------------------------*/
+
+.filtergroup
+{
+}
+.filtergroup .name
+{
+    background: none repeat scroll 0 0 #000000;
+    border-bottom: 2px solid #CCCCCC;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px;
+    border-radius: 0 2px 0 0;
+}
+.filtergroup ul
+{
+    margin: 0;
+    padding: 0;
+}
+.filtergroup ul li
+{
+    background: url(images/filter-grad.png) repeat-x scroll 0 0 #E9E9E9;
+    border-bottom: 1px solid #CCCCCC;
+    list-style: none outside none;
+}
+.filtergroup ul li:hover
+{
+    background: url(images/filter-grad-hover.png) repeat-x scroll 0 0 #E9E9E9;
+    cursor: pointer;
+}
+.filtergroup ul li input
+{
+    float: right;
+    margin-right: 5px;
+    position: relative;
+    top: 12px;
+}
+.filtergroup ul li label
+{
+    padding: 1px 0 0;
+    cursor: pointer;
+}
+.filtergroup ul li label span
+{
+    position: relative;
+    cursor: pointer;
+    top: -6px;
+}
+.filtergroup ul li label img
+{
+    position: relative;
+    cursor: pointer;
+    top: 5px;
+    width: 35px;
+}
+/*Form error
+--------------------------------------*/
+#logo #search #searchInp.error, #directionsFields .directionsitem input.error
+{
+    background-color: #FFBABA;
+    color: #000;
+}
+#messagecontainer
+{
+    display: none;
+}
+/*Form multiple addresses
+--------------------------------------*/
+#message
+{
+    padding: 10px;
+}
+#ddlMultipleAddresses
+{
+    float: left;
+    width: 220px;
+    font-size: 13px;
+}
+#selectAddress
+{
+    background: url("images/button-grad.png") repeat-x scroll 0 0 transparent;
+    border-color: #000000;
+    border-radius: 0 5px 5px 0;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 2px 2px 4px;
+    font-weight: bold;
+    text-align: center;
+    font-family: MS Shell Dlg, Arial;
+}
+/*Popup
+--------------------------------*/
+#popup h1
+{
+    color: #009900;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#popup #popup-content
+{
+    margin: 5px 0;
+}
+#popup #popup-content #popup-address
+{
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+#popup #popup-content .popup-section h2
+{
+    color: #009900;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+#popup #popup-content .popup-section ul
+{
+    margin: 0;
+    padding: 0;
+}
+#popup #popup-content .popup-section ul li
+{
+    font-size: 12px;
+    list-style: none outside none;
+}
+#print, #reset, #remove, #info
+{    
+    background: url("images/button-grad.png") repeat-x scroll center center #4B4B4B;
+    border-color: #032B51;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-family: MS Shell Dlg, Arial;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 5px;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 2px #000000;
+    top: -1px;
+    width: 30px;
+    text-decoration: none;
+    box-shadow: 0 1px 2px #FFFFFF;
+}
+#print img, #reset img, #remove img, #info img 
+{
+    height: 20px;
+    position: relative;
+    top: 5px; 
+    border: none;  
+}
+#remove 
+{
+    display: none;
+    
+}
+#printHeader
+{
+    display: none;
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    height: 100px;
+    width: 200px;
+}
+#printHeader img 
+{
+    width: 100px;
+}
+/*Responsive styling
+-------------------------------------*/
+#header #back.respond
+{
+    width: 155px;
+}
+#header #title.respond
+{
+    width: 147px;
+}
+#header #title.respond a div h3
+{
+    width: 171px;
+}
+#header #title.respond #logoCont
+{
+    width: 194px;
+}
+#header #title.respond #logoCont h3
+{
+    width: 196px;
+}
+#logo #search.respond #searchInp
+{
+    width: 145px;
+}
+#poweredby.respond
+{
+    display: none;
+}
+#logo .title.respond2 
+{
+    font-size: 80%;
+}
+#logo #search.respond2 
+{
+    left: 348px;
+}
+#logo #topfunctions.respond2 
+{
+    top: -15px;    
+}
+/*Browser CSS
+-----------------------------------------*/
+#logo #search #searchBtn.chrome 
+{
+    top: 1px;    
+}
+#logo #search #searchBtn.safari 
+{
+    top: 1px;
+}
+body
+{
+    -webkit-text-size-adjust: none !important;
+}
+/*Custom Directions Style
+---------------------------------------*/
+#directionsListHeading 
+{    
+    color: #032B51;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 7px;
+    padding-top: 8px;
+    text-align: center;
+}
+#directionsListHeading:hover 
+{
+    cursor: pointer;    
+}
+#directionsList
+{    
+    border-right: medium none;
+    border-style: dashed none none;
+    border-top: 1px dashed #CCCCCC;
+    border-width: 1px medium medium;
+    font-size: 12px;
+    margin-top: 10px;
+    max-height: 300px;
+    overflow: auto;
+    padding: 0 4px;
+    width: 100%;
+}
+.hide 
+{
+    display: none;    
+}
+.directionsSummaryItem 
+{
+    padding: 2px 5px;
+}
+#directionsList tr.total 
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+#directionsList tr.total td 
+{
+    font-weight: bold;
+}
+#directionsList tr td
+{
+    border: none;
+}
+#elevationmeasurments 
+{
+    
+}
+
+#elevationmeasurement, #elevationmeasurementarea
+{
+    background: none repeat scroll 0 0 #DBDBDB;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 3px solid #B6121B;
+    padding: 10px 2px;
+    text-align: center;
+    display: none;
+    text-shadow: 1px 1px #FFF;
+}
+#elevationmeasurementarea 
+{
+    border-bottom: none;       
+    padding-bottom: 0;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#elevationmeasurement 
+{
+    border-top: none;    
+    padding-top: 5px;   
+    font-size: 12px;
+}
+#elevationmeasurement span 
+{
+    font-weight: bold;            
+}
+#elevationmeasurementmap 
+{
+    display: none;
+    height: 150px;
+    width: 267px;    
+    background: url("images/loading.gif") no-repeat scroll center center #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+#selectedMapLayersCount, #selectedZonesCount, #selectedElevationCount
+{
+    background: none repeat scroll 0 0 #B6121B;
+    border: 3px solid #FFFFFF;
+    border-radius: 30px 30px 30px 30px;
+    bottom: 25px;
+    box-shadow: 0 1px 2px #000000;
+    color: #FFFFFF;
+    display: none;
+    left: 36px;
+    padding: 3px 8px;
+    position: absolute;    
+}
+#selectedElevationCount
+{
+    left: 93px;
+}
+#selectedZonesCount 
+{
+    bottom: 25px;    
+    left: -15px;
+    position: absolute;    
+}
+#zoneInfo 
+{        
+    background: url("images/bottom-button.png") repeat-x scroll center center #4B4B4B;
+    border: 1px solid #032B51;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 2px 5px;
+    position: absolute;
+    text-shadow: 1px 1px #000000;
+    right: 6px;
+    height: 14px;
+}
+#zoneInfo img 
+{
+    height: 14px;
+}
+#clearSelectedZones 
+{
+    display: none;
+    background: url("images/bottom-button.png") repeat-x scroll center center #4B4B4B;
+    border: 1px solid #032B51;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 2px 5px;
+    position: absolute;
+    text-shadow: 1px 1px #000000;
+}
+#clearSelectedLayers
+{   
+    background: url("images/bottom-button.png") repeat-x scroll center center #4B4B4B;
+    border: 1px solid #032B51;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    left: 210px;
+    margin-left: 13px;
+    padding: 2px 5px;
+    position: absolute;
+    text-shadow: 1px 1px #000000;  
+}
+
+#clearSelectedElevation 
+{
+    display: none;
+    background: url("images/bottom-button.png") repeat-x scroll center center #4B4B4B;
+    border: 1px solid #032B51;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 11px;
+    left: 210px;
+    margin-left: 13px;
+    padding: 2px 5px;
+    position: absolute;
+    text-shadow: 1px 1px #000000; 
+}
+
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerSelectedZone table tr th.tablecatheading, 
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner #zonesContentInnerAllZones table tr th.tablecatheading 
+{
+    background: none repeat scroll 0 0 #ADADAD !important;
+    text-shadow: 1px 1px #CCCCCC;
+}
+#allZonesHeading 
+{
+    cursor: pointer;    
+}
+#toggleAllZones 
+{
+    float: right;
+    left: -5px;
+    position: relative;
+    width: 10px;
+    cursor:pointer;
+}
+
+#helpPane 
+{
+    background: none repeat scroll 0 0 #000000;
+    display: block;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+#elevationmeasurementchart 
+{
+    display: none;    
+    /*height: 150px;
+    */
+    width: 267px;
+}
+#loading 
+{
+    position: absolute;    
+}
+
+#infoWindowbg
+{
+    background: none repeat scroll 0 0 #000;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: block;
+    display: none;
+}
+#infoWindow 
+{    
+    height: 100%; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: none;        
+}
+#infoWindow .content 
+{
+    padding: 10px;    
+}
+#infoWindow .content h3 
+{
+    margin: 0;
+    padding: 0;    
+    color: #fff;
+}
+#infoWindow .content p 
+{
+    margin: 0;
+    padding: 0;    
+}
+#infoWindow #search-info 
+{
+    background: url("images/arrow-top.png") no-repeat scroll 176pt 0 transparent;
+    border-radius: 10px 10px 10px 10px;
+    left: 221px;
+    margin-top: 10px;
+    position: absolute;
+    top: 45px;
+}
+#infoWindow #search-info #search-info-content 
+{
+    background: none repeat scroll 0 0 #0066A3;
+    border-radius: 4px;
+    min-height: 40px;
+    position: relative;
+    top: 16px;
+    width: 300px;
+    color: #FFF;
+}
+
+#infoWindow #functions-info 
+{
+    background: url("images/arrow-top.png") no-repeat scroll 185pt 0 transparent;
+    border-radius: 10px 10px 10px 10px;
+    right: 66px;
+    margin-top: 10px;
+    position: absolute;
+    top: 47px;
+}
+#infoWindow #functions-info #functions-info-content  
+{    
+    background: none repeat scroll 0 0 #0066A3;
+    border-radius: 4px;
+    min-height: 40px;
+    position: relative;
+    top: 16px;
+    width: 300px;
+    color: #FFF;
+}
+#infoWindow #main-info 
+{    
+    background: none repeat scroll 0 0 #0066A3;
+    border-radius: 5px 5px 5px 5px;    
+    color: #FFFFFF;
+    display: none;
+    height: 345px;
+    padding-bottom: 20px;
+    position: absolute;
+}
+#infoWindow  #infoWindow-close 
+{    
+    background: url("images/close-info.png") no-repeat scroll right center #0066A3;
+    border-radius: 0 0 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    line-height: 24px;
+    padding: 5px 25px 5px 10px;
+    text-transform: uppercase;
+    margin-right: 2px;
+}
+#infoWindow #main-info #main-info-content 
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 958px;    
+}
+#infoWindow #main-info #main-info-content-close 
+{
+        
+}
+#infoWindow #main-info #main-info-content .banner {}
+#infoWindow #main-info #main-info-content .content h3 
+{
+    margin-bottom: 5px;
+}
+#infoWindow #main-info #main-info-content .banner img 
+{
+    width: 958px;
+    border-bottom: 3px solid #B0131A;    
+}
+#infoWindow #main-info #main-info-content .content {}
+#infoWindow #main-info #main-info-content .footer {}
+
+#infoWindow #bottomfunctions-info 
+{
+    background: url("images/arrow-bottom.png") no-repeat scroll 31pt 80pt transparent;
+    border-radius: 10px 10px 10px 10px;
+    bottom: 63px;
+    left: 10px;
+    margin-top: 10px;
+    position: absolute;
+}
+#infoWindow #bottomfunctions-info #bottomfunctions-info-content 
+{
+    background: none repeat scroll 0 0 #0066A3;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    min-height: 40px;
+    position: relative;
+    top: -18px;
+    width: 300px;   
+}
+
+#infoWindow #zones-info 
+{
+    background: url("images/arrow-bottom.png") no-repeat scroll 171pt 97pt transparent;
+    border-radius: 10px 10px 10px 10px;
+    bottom: 63px;
+    right: 10px;
+    margin-top: 10px;
+    position: absolute;   
+}
+#infoWindow #zones-info #zones-info-content 
+{
+    background: none repeat scroll 0 0 #0066A3;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    min-height: 40px;
+    position: relative;
+    top: -18px;
+    width: 300px;  
+}

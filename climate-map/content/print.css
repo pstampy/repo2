@@ -1,0 +1,58 @@
+﻿#logo 
+{
+    background: #FFFFFF;        
+}
+#search 
+{
+    display: none;    
+}
+#topfunctions 
+{
+    display: none;
+}
+#map 
+{
+    height: 1000px;
+    width: 500px;
+}
+#footer 
+{
+    display: none;    
+}
+#tabs 
+{
+    display: none;
+}
+#righttabs 
+{
+    display: none;    
+}
+#main #functions #functionFields 
+{
+    display: block;
+}
+#logo .title h2,
+#logo .title h3
+{
+    color: #000;
+    text-shadow: none;
+}
+#main #functions {
+    position: inherit;
+    width: inherit;    
+}
+#clearSelectedLayers,
+#clearSelectedZones,
+#clearSelectedElevation 
+{
+    display: none !important;    
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane 
+{
+    position: inherit;
+    width: inherit;    
+}
+#main #functions #functionFields #zonesContent.functionFieldsPane #zonesContentInner 
+{
+    max-height: inherit;    
+}
