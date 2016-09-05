@@ -194,7 +194,7 @@ var Main = {
 
                             if(data.rows[i][0] == zoneIds[x]) {
                                 // Check if the PDF exists
-                                var moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
+                                var moreInfo = '<a target="_blank" href="content/zoneinfo/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
                                 var colorSwatch = '<div class="colorSwatch" style="' + 
                                 'background:' + data.rows[i][2] + ';' + 
                                 'border: solid 1px' + data.rows[i][3] + ';' + 
