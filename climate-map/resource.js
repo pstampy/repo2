@@ -378,7 +378,7 @@ var Main = {
             name: 'Climate Zone Boundaries',
             selected: true,
             showInMenu: true,
-            icon: 'climate_zones.png',
+            icon: null,
             settings: {
                 query: {
                     select: 'col2\x3e\x3e0',
@@ -396,7 +396,7 @@ var Main = {
             name: 'Post Code Boundaries',
             selected: true,
             showInMenu: true,
-            icon: 'post_codes.png',
+            icon: null,
             settings: {
                 query: {
                     select: 'geometry',
@@ -416,7 +416,7 @@ var Main = {
             description: 'Only available for Western Australia',
             selected: false,
             showInMenu: true,
-            icon: 'suburbs.png',
+            icon: null,
             settings: {
                 query: {
                     select: 'geometry',
