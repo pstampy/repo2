@@ -197,11 +197,9 @@ var Main = {
                                 var moreInfo = 'N/A';
                                 $.get('/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf')
                                     .done(function() {
-                                        console.log('Success');
                                         moreInfo = '<a target="_blank" href="/files/files/climatezonemaps/pdf/' + data.rows[i][0] + '.pdf"><img style="height: 20px;" src="content/images/dl-pdf.png" alt="Download PDF" /></a>';
                                     })
                                     .fail(function() {
-                                        console.log('Fail');
                                         moreInfo = 'N/A';
                                     });
                                 var colorSwatch = '<div class="colorSwatch" style="' + 
