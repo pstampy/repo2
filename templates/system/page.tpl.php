@@ -124,7 +124,8 @@
       <?php print render($footer_block['content']); ?>
     </div>
     <div class="footer-text">
-      <p>Administered by the <a href="https://www.environment.gov.au" title="environment.gov.au">Department of Environment and Energy</a> on behalf of the states and territories.</p>
+    <?php $footer_text = module_invoke('block', 'block_view', '1'); ?>
+      <?php print render($footer_text['content']); ?>
     </div>
     <div class="copyright">
       <?php $copyright_block = module_invoke('copyright_block', 'block_view', 'copyright_block'); ?>
