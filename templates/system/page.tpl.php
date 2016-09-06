@@ -73,14 +73,18 @@
 <div class="l-page">
   <header class="l-header" role="banner">
     <div class="top-link">
-      <ul>
-        <li class="first">
-          <a href="https://www.environment.gov.au" title="environment.gov.au">environment.gov.au</a>
-        </li>
-        <li>
-          <a href="http://www.yourhome.gov.au" title="YourHome">yourhome.gov.au</a>
-        </li>
-      </ul>
+    <?php 
+    $secondary_menu = menu_navigation_links('menu-secondary-menu');
+    print theme ('links', array (
+    	'links' => $secondary_menu,
+    	'attributes' => array (
+    		'id' =>'secondary_menu',
+    		'class'=> array ('links', 'clearfix'),
+    		),
+
+    	));
+    	?>
+      
     </div>
     <div class="l-branding">
       <div class="logo">
